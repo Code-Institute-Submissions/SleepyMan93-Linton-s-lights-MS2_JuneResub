@@ -1,0 +1,99 @@
+body {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    background: #080708;
+}
+
+
+.game-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #F8F4F9;
+}
+
+.container {
+    border: 5px solid red;
+    height: 100vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.button-box1 {
+    height: 10%;
+    width: 300px;
+    margin: 80px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+.button-box2 {
+    height: 10%;
+    width: 300px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+.button-box3 {
+    height: 10%;
+    width: 300px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.gamebutton1 {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 4px solid #F7AEF8;
+    align-self: center;
+}
+
+.gamebutton2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 4px solid #00B2CA;
+    align-self: center;
+}
+
+.gamebutton3 {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 4px solid #E7E6F7;
+    align-self: center;
+}
+
+.gamebutton4 {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 4px solid #9EE493;
+    align-self: center;
+}
+
+.gamebutton5 {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 4px solid #F79256;
+    align-self: center;
+}

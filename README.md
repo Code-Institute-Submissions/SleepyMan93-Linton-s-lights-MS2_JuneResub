@@ -81,7 +81,18 @@ This game is aimed to help parents too. Keeping the children engaged outside of 
 
 # User Stories
 
-1. As a user within this age grouip
+1. As a user between the ages 9-15, I want a game that:
+   - Has an underlying fun story masked in as the game
+   - Something to do in between school work
+   - Characters to attach to
+   - Bright but engaging colour scheme 
+   - Easy to read but dramatiuc language 
+   - Different difficulties and levels for competition
+
+2. As a parent, I would like a game for my child that:
+   - Keeps their brains stimulated but helps learning development
+   - Appropriate context and Language
+   - Easy to teach design and layout 
 
 
 
