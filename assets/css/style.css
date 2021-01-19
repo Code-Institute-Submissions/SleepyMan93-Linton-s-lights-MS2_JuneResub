@@ -66,12 +66,20 @@ h1 {
     align-self: center;
 }
 
+.gamebutton1:active {
+    background: #F7AEF8;
+}
+
 .gamebutton2 {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #00B2CA;
     align-self: center;
+}
+
+.gamebutton2:active {
+    background: #00B2CA;
 }
 
 .gamebutton3 {
@@ -82,6 +90,10 @@ h1 {
     align-self: center;
 }
 
+.gamebutton3:active {
+    background: #E7E6F7;
+}
+
 .gamebutton4 {
     height: 90px;
     width: 90px;
@@ -90,10 +102,18 @@ h1 {
     align-self: center;
 }
 
+.gamebutton4:active {
+    background: #9EE493;
+}
+
 .gamebutton5 {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #F79256;
     align-self: center;
+}
+
+.gamebutton5:active {
+    background: #F79256;
 }

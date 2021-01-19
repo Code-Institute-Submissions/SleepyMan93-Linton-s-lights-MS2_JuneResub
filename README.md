@@ -93,6 +93,60 @@ This game is aimed to help parents too. Keeping the children engaged outside of 
    - Keeps their brains stimulated but helps learning development
    - Appropriate context and Language
    - Easy to teach design and layout 
+   - Something engaging incase I need to work late or I'm busy working from homne
+
+# Design Principles
+
+## Fonts
+
+1. Title 
+
+   For this I chose the google font **Hachi Maru Pop**. It has a Pixar-esque feel with the 'i' symbolising a light. Below is an example of the title font:
+
+   ![Hachi Maru Pop](assets/images/titleFont.png)
+
+2. Linton's rules
+
+   For the pop up rules message, I wanted a more retro and original game style, similar to the read messages from Pokemon.
+   The font I decided on was **Source Code Pro** due to computer/lost in space feel. Below is an example of the message font:
+
+   ![Linton's Rules](assets/images/rulesMessage.png)
+
+    The **Source Code Pro** will also be used on the homepage for user input, start button and any other needed text.
+
+## Icons
+
+1. Linton
+
+    I wanted to create a character that could live through multiple game settings and that character is called Linton.
+    In this scenario, Linton is an Astronaut because I felt it would appeal to the target age group/audience. 
+    
+    Astronauts have an intrinsically positive message when it comes to the Earth. 
+    They are either known for saving it, exploring it and never wanting to hurt it. With the COVID-19 and environmental issues we face in the 21st Century, I thought this choice would naturally help spread positivity about the Earth.
+
+    ![Linton](assets/images/linton.png)
+
+2. Spaceship
+
+    For context, I chose this spaceship for the user to save. As a feature, when you complete the game, after
+    Linton says congratulations, the rocket will fly across the screen:
+
+    ![Spaceship](assets/images/lintonRocket.png)
+
+
+## Colours
+
+The colour scheme for this web application is comprised of two palettes: Space | Buttons.
+I used [Coloors](https://coolors.co/), an online colour palette generator for cohesive, thoughtful and bold colours to match the game.
+
+### Space
+![Space Palette](assets/images/spaceScheme.png)
+
+### Buttons
+![Button Palette](assets/images/buttonScheme.png)
+
+# Sitemap | Wireframes
+
 
 
 
