@@ -1,6 +1,24 @@
-$("#start")
+let win;
+let on = false;
+let intervalId;
 
-function game() {
+const startButton = document.getElementById('start');
+const turnCounter = document.getElementById('turn');
+
+startButton.addEventListener('click', (event) => {
+    if (startButton.checked == true) {
+        on == true;
+        turnCounter.innerHTML = "-";
+        play ();
+    } else {
+        on == false;
+        turnCounter.innerHTML = "";
+        clearInterval(intervalId);
+    }
+});
+
+
+function play() {
     let win = false;
     let order = []
         for (var i = 0; i < 20; i++) {
