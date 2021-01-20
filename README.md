@@ -20,7 +20,7 @@
    - Features and Future Implementations 
 2. [Testing](#testing)
    - Jasmine Testing 
-   - Game Testing
+   - Game Testing / Life Cycle
    - HTML and CSS checks using WC3 
    - User Testing
    - Peer Code Review
@@ -145,7 +145,33 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 ### Buttons
 ![Button Palette](assets/images/buttonScheme.png)
 
-# Sitemap | Wireframes
+# Sitemap / Wireframes
+
+# Features / Future Implementations
+
+--------------------
+
+# Testing 
+
+## Jasmine Testing 
+
+## Game Testing / Life Cycle
+
+- My first piece of gaming code was to add fucntionality to the 'Start' button and create 
+a blank 'game' function template, outlining the necessary variables. I decided to use the 'event' click
+function to initialise and trigger the game: 
+
+![Start Code](assets/images/gameFunctionTemplate.png)
+
+- When my start button is "checked" returing **true**, the "on" variable becomes **true** and the **play** function
+is passsed. From here my "for" loop fills the **order** array with 20 random numbers from 1-5, these random numbers
+will be used to determine which light is flashed for each round. Below is an example, I checked the start button 3 times, 
+each array returned a random and different set of values each time:
+
+![For Loop Function](assets/images/forLoopFunction.png)
+
+
+
 
 
 
