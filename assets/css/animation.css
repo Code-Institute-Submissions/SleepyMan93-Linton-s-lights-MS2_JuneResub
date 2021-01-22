@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+html { overflow-y: scroll; }
+
+/* Home Page Animation */
+
+#foreground {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/foreground.png");
+    background-repeat: repeat; /* This is so the image fills up the screen without stretching the original + more stars */
+    position: fixed;
+    z-index: 3;
+
+    animation: STAR-FORE 9000000s infinite linear;
+}
+
+#midground {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/midground.png");
+    background-repeat: repeat; 
+    position: fixed;
+    z-index: 2;
+
+    animation: STAR-MID 70000000s infinite linear;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-repeat: repeat; 
+    position: fixed;
+    z-index: 1;
+
+    animation: STAR-BACK 100000000s infinite linear;
+}
+
+
+@keyframes STAR-BACK {
+    0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100000000px 0;
+  }
+}
+
+@keyframes STAR-MID {
+    0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100000000px 0;
+  }
+}
+
+@keyframes STAR-FORE {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+  }
+    100% {
+        background-position: 100000000px 10000000px;
+        opacity: 0;
+  }
+}
+
+
+
+
+
