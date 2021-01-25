@@ -41,6 +41,31 @@ html { overflow-y: scroll; }
     animation: STAR-BACK 100000000s infinite linear;
 }
 
+.linton {
+    position: fixed;
+    z-index: 4;
+    height: auto;
+    width: 10vw;
+    position: absolute;
+
+    animation: LINTON 5s infinite ease-in;
+}
+
+#data-board {
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    width: 100vw;
+    height: auto;
+}
+
+.user {
+    z-index: 5;
+    width: inherit;
+    height: inherit;
+}
+
 
 @keyframes STAR-BACK {
     0% {
@@ -70,6 +95,25 @@ html { overflow-y: scroll; }
         opacity: 0;
   }
 }
+
+@keyframes LINTON {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-3deg);
+    }
+    25% {
+        transform: translateX(1px) translateY(7px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(0px) translateY(3px) rotate(3deg);
+    }
+    75% {
+        transform: translateX(-1px) translateY(5px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(-3deg);
+    }
+}
+
 
 
 
