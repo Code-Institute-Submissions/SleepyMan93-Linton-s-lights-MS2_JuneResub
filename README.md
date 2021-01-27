@@ -1,4 +1,4 @@
-# Linton's Lights Memory Game
+# Linton's Lights: Memory Game
 
 #### Code Institute Full Stack Development Dipoloma: Milestone Project 2 - Interactive Frontend Development 
 ##### Created by William Donovan
@@ -161,18 +161,86 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 a blank 'game' function template, outlining the necessary variables. I decided to use the 'event' click
 function to initialise and trigger the game: 
 
-![Start Code](assets/images/gameFunctionTemplate.png)
+  ![Start Code](assets/images/gameFunctionTemplate.png)
 
 - When my start button is "checked" returing **true**, the "on" variable becomes **true** and the **play** function
 is passsed. From here my "for" loop fills the **order** array with 20 random numbers from 1-5, these random numbers
 will be used to determine which light is flashed for each round. Below is an example, I checked the start button 3 times, 
-each array returned a random and different set of values each time:
+each array returned a random and different set of values each time, which I printed onto the console.log:
 
 ![For Loop Function](assets/images/forLoopFunction.png)
 
+- After doing some reading and looking over notes, I forgot one could assign button values. My overall design only needs a "Start Button"
+to return a **true** value for the game to **initialise** and start. This is my start button function now:
 
+   ![Start Function](assets/images/startFunction.png)
 
+# Bugs / De-Bugging
 
+1. My first known bug was encountered when trying to excecute the game function "flash" for the first time. "Flash" was not defined in "gameFlash":
+
+   ![Flash Bug](assets/images/flashBug.png)
+
+2. A similar bug occured but this time with the "compTurn" variable. My first thoughts is that I need to either define a gloabl varaible value or define the 
+variable inside the function each time:
+
+   ![compTurn Bug](assets/images/compTurnBug.png)
+
+3. This issue is not necessarily a bug but quite a difficult hurdle to overcome, changing circle to fill when it's array number is selected for that turn. 
+
+   - ### Solved: Below is the code I went with to fill the circles when their associated fucntion is called in the gameFlash Function:
+
+   ![Color Fill Fix](assets/images/colorFillFunctions.png)
+
+4. Minor issue but for some reason I couldn't load an image as my background style in **animation.css**. Tried multiple forms of syntax:
+
+   - ### Issue Fixed: 
+   
+   Instead of writing its direct path, I needed to preceed the root with "../" as the css file is in the same directory as the image folder.
+   Fixed syntax: "../images/background.png"
+
+5. For the homepage I wanted an animated space looking background. I chose to use keyframe animation and some simple CSS styling to accomplish this.
+Thanks to <a href="https://css-tricks.com/parallax-background-css3/" target="_blank">Chris Coyier</a>, I was able to grasp a basic understanding of
+the animation I wanted to achieve and grab the desired transparent star images needed. Unfortunately, I could get the stars to animate
+accross the page (from right to left) but couldn't get them to reappear from the opposite side to create a nice flowing loop. Here is some inital CSS code:
+
+   ![First Animation attempt](assets/images/starsAnimation.png)
+   
+   - ### Issue Fixed: 
+   
+   Through further research I decided to address one level of the animation (#background) first. The issue I realised was not setting a 
+   percentile finishing state. Using 0% and 100% states, I could tell the animation to move a drastic amount of pixels which to reach would cause it to 
+   loop back first before ever finishing. I found an interesting relationship between the animation in seconds and the 100% pixel ending state. To increase
+   the animation speed ten fold, you just make the seconds a tenth of whatever pixel state you delegate. Here is the fixed CSS animation:
+
+   ![Finished Star Animation](assets/images/finalStarAnimation.png)
+
+6. I encountered a bug when testing the game and its responsiveness. In the code I attempted to make it that if a variable **flash** was equal to the variable
+**turn**, it would essentially stop the computer and start the turn of the user. My buttons would flash correctly, corrosponding with the order array number 
+but the flash kept iterating without stopping. I console.logged the flash varaible to see if it was working: 
+
+   ![Flash Bug](assets/images/computerTurnBug.png)
+   
+    The **flash** count is clearly working as you can see from the logged numbers 1-20. This indicated my issue must be with the 
+    **if** statement indicating the players turn. In fact, upon further testing and logging variables to the console, I 
+    deduced that the array order that determines the color was not synced with the game turn, they both acted independently. To 
+    resolve this bug I will need to link the two values.
+
+   - ### Issue Fixed:
+
+   After multiple tweaks, testing and sending variables to the console log, I finally worked out the issue with this bug. It turns out the 
+   **flash** and **turn** variables were in fact linked through the **if** method...
+
+   ![Flash == Turn](assets/images/flash==turn.png)
+
+   In the end the issue was with the **turn** variable. I tried logging the **flash** variable first as mentioned above and then tried logging 
+   the **turn** variable which was again iterating but returning ...
+
+   ![Turn Variable Bug](assets/images/turnVariableBug.png)
+
+   This log was veru useful. After some research I worked out the issue was due to JavaScript scope. Although I defined the **turn** variable, it was 
+   only defined LOCALLY. I defined the variable outside the initialise function to make it GLOBAL and it resolved the issue. My gameFlash function now
+   works and only flashes the value of what turn the game is on. 
 
 
 

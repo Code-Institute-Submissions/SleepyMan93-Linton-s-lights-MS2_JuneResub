@@ -1,9 +1,10 @@
 let win;
 let intervalId;
 let flash;
-let compTurn;
+let computerTurn;
 let order = [];
 let good;
+let turn;
 
 const startButton = document.getElementById('start');
 const turnCounter = document.getElementById('turn');
@@ -12,47 +13,70 @@ let on = false;
 
 /* Start Button */
 
-function startGame () {
+function startGame() {
     if (start.value = true) {
-        on == true;
-        initialiseGame ();
+        on = true;
+        initialiseGame();
     } else {
-        on == false;
+        on = false;
         turnCounter.innerHTML = "";
         clearInterval(intervalId);
     }
-    console.log(start.value);
 }
 
+function endGame() {
+    if (finish.value = true) {
+        on = false;
+        turnCounter.innerHTML = "";
+        clearInterval(intervalId);
+        clearColor();
+        console.clear();
+    } else {
+        on = true;
+        initialiseGame();
+    }
+}
+
+let playerChoice = [];
 
 function initialiseGame() {
     win = false;
     order = [];
-    let playerChoice = [];
+    playerChoice = [];
+    turn = 1;
     flash = 0;
-    intervalId = 0;
-    let turn = 1;
     turnCounter.innerHTML = 1;
-    compTurn = true;
+    computerTurn = true;
     good = true
     for (var i = 0; i < 20; i++) {
             order.push(Math.floor(Math.random() * 5) + 1);
         }
         console.log(order);
 
-    intervalId = setInterval(gameFlash, 800);
+    intervalId = setInterval(gameFlash, 800); /* setInterval timing method will forvever call the function (gameFlash) at 800ms untill clearInterval is called inside the function */
 }
 
 function gameFlash() {
 
-        setTimeout(() => {
-            if (order[flash] == 1) one();
-            if (order[flash] == 2) two();
-            if (order[flash] == 3) three();
-            if (order[flash] == 4) four();
-            if (order[flash] == 5) five();
-            flash++;
-        }, 200);
+    if (flash == turn) {
+        clearInterval(intervalId);
+        computerTurn = false;
+        clearColor();
+        on = true;
+    }
+
+    if (computerTurn) {
+    clearColor();
+    setTimeout(() => {
+        if (order[flash] == 1) one();
+        if (order[flash] == 2) two();
+        if (order[flash] == 3) three();
+        if (order[flash] == 4) four();
+        if (order[flash] == 5) five();
+        flash++;
+    }, 200);
+    }
+    console.log(turn);
 }
 
 function one() {
@@ -77,6 +101,10 @@ function five() {
 
 function clearColor() {
     document.getElementById('pink').style.background = "transparent"
+    document.getElementById('blue').style.background = "transparent"
+    document.getElementById('white').style.background = "transparent"
+    document.getElementById('lime').style.background = "transparent"
+    document.getElementById('orange').style.background = "transparent"
 }
 
 
