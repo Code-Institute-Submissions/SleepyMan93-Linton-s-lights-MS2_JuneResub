@@ -45,8 +45,7 @@ html { overflow-y: scroll; }
     position: fixed;
     z-index: 4;
     height: auto;
-    width: 10vw;
-    position: absolute;
+    width: 20vw;
 
     animation: LINTON 5s infinite ease-in;
 }
@@ -55,6 +54,10 @@ html { overflow-y: scroll; }
     border-color: white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
     z-index: 5;
     width: 100vw;
     height: auto;
@@ -64,6 +67,10 @@ html { overflow-y: scroll; }
     z-index: 5;
     width: inherit;
     height: inherit;
+}
+
+#start {
+    z-index: 6;
 }
 
 
@@ -98,19 +105,19 @@ html { overflow-y: scroll; }
 
 @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(0) rotate(-3deg);
+        transform: translateX(0) translateY(200px) rotate(-3deg);
     }
     25% {
-        transform: translateX(1px) translateY(7px) rotate(0deg);
+        transform: translateX(0.5px) translateY(207px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(3px) rotate(3deg);
+        transform: translateX(0px) translateY(203px) rotate(3deg);
     }
     75% {
-        transform: translateX(-1px) translateY(5px) rotate(0deg);
+        transform: translateX(0.5px) translateY(205px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(0px) rotate(-3deg);
+        transform: translateX(0px) translateY(200px) rotate(-3deg);
     }
 }
 

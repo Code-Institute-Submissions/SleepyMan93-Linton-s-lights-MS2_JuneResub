@@ -163,17 +163,46 @@ function to initialise and trigger the game:
 
   ![Start Code](assets/images/gameFunctionTemplate.png)
 
-- When my start button is "checked" returing **true**, the "on" variable becomes **true** and the **play** function
+- TEST: When my start button is "checked" returing **true**, the "on" variable becomes **true** and the **play** function
 is passsed. From here my "for" loop fills the **order** array with 20 random numbers from 1-5, these random numbers
 will be used to determine which light is flashed for each round. Below is an example, I checked the start button 3 times, 
 each array returned a random and different set of values each time, which I printed onto the console.log:
 
-![For Loop Function](assets/images/forLoopFunction.png)
+   ![For Loop Function](assets/images/forLoopFunction.png)
 
 - After doing some reading and looking over notes, I forgot one could assign button values. My overall design only needs a "Start Button"
 to return a **true** value for the game to **initialise** and start. This is my start button function now:
 
    ![Start Function](assets/images/startFunction.png)
+
+- Hit a slight wall with the color iteration so moved on to the homepage for styling. The image is still but i've used some simple
+keyframe animation to make Linton float and have a slight moving star background:
+
+   ![Early Homepage](assets/images/earlyHomePage.png)
+
+- TEST: Fixed and tested the basic game function. Clicked start and end 20 times to test all the lights work according to their turn
+in the array. Moving on next to adding user interaction:
+
+   ![Finished gameFlash Function](assets/images/finishedGameFlashFunction.png)
+
+- Had issues whilst testing my playerClick function. My **if** statement to remove the fill color is completed if the **win** variable is not true.
+Initially the function had interactivity and the user could click the color but the fill wouldn't timeout. I removed the (!win) method 
+and attached the setTimeout function to the clickEventListener and the fill was removed after 400ms. From this test I realised the **win** variable 
+wasn't returning flase, even though I declared the value inside the initialiseGame function. To rectify the issue, I just declared the **win** value
+as false in the global scope. Now the basic playerClick function works:
+
+   ![Basic playerClick Function](assets/images/playerClickBasic.png)
+   
+- TEST: I just tested the finished game functionality and nearly everything is working. The only issue I ran into when testing the game was clicking the wrong
+light. This probably has something to do with the if else condition if good == true... I need the an error to show and the round to repeat.
+
+- TEST: Tried testing the game through to level 20. Once I hit level 5, the game stops progressing and seems the on variable stays on true. Going back through the 
+code to see why it only goes to level 5.
+   - SOlUTION: Managed to solve both the issues that arose from these tests. I placed all the variables inside the wrong choise if condition which seemed to 
+   galvinise all the code I had seperated previously
+   
+   ![checkMoveSolution.png](assets/images/checkMoveSolution.png)
+
 
 # Bugs / De-Bugging
 
@@ -241,6 +270,18 @@ but the flash kept iterating without stopping. I console.logged the flash varaib
    This log was veru useful. After some research I worked out the issue was due to JavaScript scope. Although I defined the **turn** variable, it was 
    only defined LOCALLY. I defined the variable outside the initialise function to make it GLOBAL and it resolved the issue. My gameFlash function now
    works and only flashes the value of what turn the game is on. 
+
+7. After writing the checkMove Function, the console delivered quite an interesting bug. Before the game was working fine, now an error regarding the startGame
+onclick function is present: 
+
+   ![startGame Error](assets/images/startGameError.png)
+
+   - ### Issue Fixed: 
+
+   This was more of the simpler solutions. After reverting back a couple saves, I realised the issue was due to another error regarding my level variable.
+   I think the shorthand syntax was causing initial errors so upon removal, the game now works again. Will assess how to sort out the level variable later.
+
+   ![startGame Error Fix](assets/images/startGameErrorFix.png)
 
 
 

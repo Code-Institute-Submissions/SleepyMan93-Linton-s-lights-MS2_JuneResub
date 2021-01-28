@@ -5,11 +5,81 @@ body {
     background: #080708;
 }
 
+#foreground {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/foreground.png");
+    background-repeat: repeat; /* This is so the image fills up the screen without stretching the original + more stars */
+    position: fixed;
+    z-index: 3;
+
+    animation: STAR-FORE 9000000s infinite linear;
+}
+
+#midground {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/midground.png");
+    background-repeat: repeat; 
+    position: fixed;
+    z-index: 2;
+
+    animation: STAR-MID 70000000s infinite linear;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-repeat: repeat; 
+    position: fixed;
+    z-index: 1;
+
+    animation: STAR-BACK 100000000s infinite linear;
+}
 
 .game-title {
     display: flex;
+    position: relative;
     justify-content: center;
-    margin-top: 20px;
+    flex-wrap: nowrap;
+    margin-top: 20px auto;
+    z-index: 6;
+}
+
+#turn {
+    display: flex;
+    position: relative;
+    max-height: 30px;
+    justify-content: center;
+    margin-top: 5px;
+    border: 2px solid red;
+    color: blanchedalmond;
+    z-index: 7;
+}
+
+#startLine {
+    display: flex;
+    max-height: 30px;
+    justify-content: center;
+    margin-top: 5px;
+    border: 0px solid black;
+}
+
+#turnCount {
+    justify-self: center;
+    border: 1px solid white;
+    position: relative;
+    z-index: 6;
+}
+
+#switches {
+    margin-left: 13px;
+    z-index: 5;
+}
+
+#finish {
+    margin-left: 400px;
 }
 
 h1 {
@@ -19,13 +89,14 @@ h1 {
 .container {
     border: 5px solid red;
     height: 100vh;
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+    z-index: 6;
 }
 .button-box1 {
     height: 10%;
@@ -58,62 +129,76 @@ h1 {
     align-self: center;
 }
 
-.gamebutton1 {
+#pink {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #F7AEF8;
     align-self: center;
+    z-index: 5;
 }
 
-.gamebutton1:active {
-    background: #F7AEF8;
-}
-
-.gamebutton2 {
+#blue {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #00B2CA;
     align-self: center;
+    z-index: 5;
 }
 
-.gamebutton2:active {
-    background: #00B2CA;
-}
-
-.gamebutton3 {
+#white {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #E7E6F7;
     align-self: center;
+    z-index: 5;
 }
 
-.gamebutton3:active {
-    background: #E7E6F7;
-}
-
-.gamebutton4 {
+#lime {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #9EE493;
     align-self: center;
+    z-index: 5;
 }
 
-.gamebutton4:active {
-    background: #9EE493;
-}
-
-.gamebutton5 {
+#orange {
     height: 90px;
     width: 90px;
     border-radius: 100%;
     border: 4px solid #F79256;
     align-self: center;
+    z-index: 5;
 }
 
-.gamebutton5:active {
-    background: #F79256;
+@keyframes STAR-BACK {
+    0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100000000px 0;
+  }
+}
+
+@keyframes STAR-MID {
+    0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100000000px 0;
+  }
+}
+
+@keyframes STAR-FORE {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+  }
+    100% {
+        background-position: 100000000px 10000000px;
+        opacity: 0;
+  }
 }
