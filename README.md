@@ -203,6 +203,11 @@ code to see why it only goes to level 5.
    
    ![checkMoveSolution.png](assets/images/checkMoveSolution.png)
 
+- Moving back onto styling my homepage and creating the landing tile. I've created a button that links to the game page with basic styling but I can't seem to 
+center the button ontop of my score board image. 
+    
+    ![Home Page Styling](assets/images/homepageStyling.png)
+
 
 # Bugs / De-Bugging
 
