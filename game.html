@@ -16,34 +16,43 @@
         <div id="foreground"></div>
 
         <div class="game-title">
-            <h1>LINTON'S LIGHTS</h1>
+            <div class="title-box"><h1>LINTON'S LIGHTS</h1></div>
         </div>
 
-        <div id="turn" class="container">
-        </div>
-
-        <div id="startLine" class="container">
-            <div id="switches">
-                <button type="button" value="true" id="start" onclick="startGame()">Start</button>
-                <button type="button" value="true" id="finish" onclick="endGame()">End</button>
-            </div>
+        <div id="turn">    
         </div>
 
         <div class="container">
+            <div class="template">
+                <img src="assets/images/LINTON-LIGHT-BOARD.png" alt="Linton's Lights">
+            </div>
+
             <div class="button-box1">
-                <div id="pink" class="gamebutton1">
-                </div>
-                <div id="blue" class="gamebutton2">
-                </div>
+                    <div id="pink" class="gamebutton1"></div>
+                    <div id="blue" class="gamebutton2"></div>
             </div>
-            
+
+
             <div class="button-box2">
-                <div id="white" class="gamebutton3"></div>
+                    <div id="white" class="gamebutton3"></div>
             </div>
-                        
+
+                
             <div class="button-box3">
-                <div id="lime" class="gamebutton4"></div>
-                <div id="orange" class="gamebutton5"></div>
+                    <div id="lime" class="gamebutton4"></div>
+                    <div id="orange" class="gamebutton5"></div>
+            </div>
+
+
+            <div class="link" style="text-align: center;">
+                    <a href="game.html" class="btn-3d green" value="true" id="finish" onclick="endGame()" style="color: black;">Restart Game</a>
+            </div>
+
+        </div>
+
+        <div id="startLine" class="container-2">
+            <div id="switches">
+                <button type="button" value="true" id="start" onclick="startGame()">Start</button>
             </div>
         </div>
 

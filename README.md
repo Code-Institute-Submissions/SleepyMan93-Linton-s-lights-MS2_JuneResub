@@ -201,12 +201,15 @@ code to see why it only goes to level 5.
    - SOlUTION: Managed to solve both the issues that arose from these tests. I placed all the variables inside the wrong choise if condition which seemed to 
    galvinise all the code I had seperated previously
    
-   ![checkMoveSolution.png](assets/images/checkMoveSolution.png)
+   ![checkMove Solution](assets/images/checkMoveSolution.png)
 
 - Moving back onto styling my homepage and creating the landing tile. I've created a button that links to the game page with basic styling but I can't seem to 
 center the button ontop of my score board image. 
+
+    ![Homepage Styline](assets/images/homepageStyling.png)
+    - SOLUTION: To arrange and size the scoreboard, I need to place the image inside another div and position it absolute in relation
+    to it's parent div.
     
-    ![Home Page Styling](assets/images/homepageStyling.png)
 
 
 # Bugs / De-Bugging
@@ -288,6 +291,16 @@ onclick function is present:
 
    ![startGame Error Fix](assets/images/startGameErrorFix.png)
 
+8. When styling the game page, after arranging and adding some CSS, I found that only the lime and orange lights could be clicked. I believe it might have something 
+to do with how I nested the divs but this became quite an annoying bug to work around. I removed each button-box div and tried one at a time. Once the button-box with 
+white, orange and lime light removed, I could click the the pink and blue buttons as options.
+
+   ![Click light Bug](assets/images/lightStylingBug.png)
+
+   - ### Issue Fixed:
+
+   After testing and trials, I realised that the z-index was placing the last div in above the rest and therefore, I couldn't click the lights from button-box1/button-box2
+   because they were ordered underneath button-box3.
 
 
 
