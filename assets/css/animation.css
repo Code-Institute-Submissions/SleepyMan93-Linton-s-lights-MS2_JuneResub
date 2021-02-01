@@ -44,11 +44,44 @@ html { overflow-y: scroll; }
 
 .linton {
     position: fixed;
-    z-index: 4;
+    z-index: 6;
     height: auto;
     width: 20vw;
 
     animation: LINTON 5s infinite ease-in;
+}
+
+#introMessage {
+    position: absolute;
+    z-index: 6;
+    font-size: 20px;
+    color: azure;
+    width: 50%;
+    height: 30%;
+    border: 2px solid;
+}
+
+.typewriter {
+  color: lime; 
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40em;
+  animation: type 5s steps(60, end); 
+}
+
+.typewriter2 {
+    color: lime; 
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 40em;
+    animation: type2 7s steps(60, end);
+}
+
+span {
+  animation: blink 1s infinite;
 }
 
 .game-title {
@@ -153,7 +186,7 @@ a:link {
 }
 
 .btn-3d.green {
-	background-color: rgb(231, 13, 13);
+	background-color: #E71D36;
 	box-shadow: 0 0 0 1px #D2D7DF inset,
 				0 0 0 2px rgba(214, 204, 204, 0.15) inset,
 				0 3px 0 0 rgba(210, 215, 223, 0.438),
@@ -199,20 +232,34 @@ a:link {
 
 @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(200px) rotate(-3deg);
+        transform: translateX(0) translateY(300px) rotate(-3deg);
     }
     25% {
-        transform: translateX(0.5px) translateY(207px) rotate(0deg);
+        transform: translateX(0.5px) translateY(307px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(203px) rotate(3deg);
+        transform: translateX(0px) translateY(303px) rotate(3deg);
     }
     75% {
-        transform: translateX(0.5px) translateY(205px) rotate(0deg);
+        transform: translateX(0.5px) translateY(305px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(200px) rotate(-3deg);
+        transform: translateX(0px) translateY(300px) rotate(-3deg);
     }
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
 }
 
 

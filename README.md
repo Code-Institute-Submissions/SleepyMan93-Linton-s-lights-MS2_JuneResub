@@ -147,8 +147,11 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 
 # Sitemap / Wireframes
 
+![Wireframe Mockup](assets/images/wireframe.png)
+
 # Features / Future Implementations
 
+-  I hope in the future I can progress the animation and some different level tiers. 
 --------------------
 
 # Testing 

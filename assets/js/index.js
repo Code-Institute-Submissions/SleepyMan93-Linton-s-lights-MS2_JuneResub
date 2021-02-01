@@ -54,13 +54,25 @@ function level() {
 /* Username Store */
 
 function userName() {
-    var name = document.getElementById("nameField").value
+    var name = document.getElementById("nameField").value;
+
+    var introMessage = `<p class="typewriter">Now we're ready for LIFT OFF ${name}!</p>
+    <p class="typewriter2">Push the BIG red button!<span>|</span></p>`;
+    document.getElementById("introMessage").innerHTML = introMessage;
+
     console.log(name);
-    const message = `<p>Help ${name}</p>`;
+    console.log(introMessage);
+
+    var message = `<p>HEEELLP! MY SHIP... IT'S ABOUT TO CRASH... ${name}, My name is Linton and i'm on a super important mission to help save our planet and I need YOUR help!!
+    Will you be the hero that Earth needs? To restore power, the mainframe needs a color series. There are 20 rounds to save Earth. When the mainframe flashes a color, wait and then
+    push the same color. If you get it right, the mainframe will then flash one more light per round. All you have to do is REMEMBER the pattern and repush the lights in order...
+    Reckon you could do that?... That's right! I KNOW YOU CAN. Gods speed ${name}!!. If you need me, just click on me to remind yourself of the mission... </p>`;
     window.localStorage.setItem("message", message);
+
+    console.log(message);
 }
 window.onload = function() {
-    const message = window.localStorage.getItem("message");
+    var message = window.localStorage.getItem("message");
     document.getElementById("message").innerHTML = message;
 }
 
