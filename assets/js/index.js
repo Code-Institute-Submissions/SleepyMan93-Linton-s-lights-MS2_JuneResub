@@ -29,6 +29,8 @@ function startGame() {
     console.log(on)
 }
 
+/* Reset Button */
+
 function endGame() {
     if (finish.value = true) {
         on = false;
@@ -41,11 +43,27 @@ function endGame() {
     }
 }
 
+/* Level Choice */
+
 function level() {
     easy = false;
     medium = false;
     hard = false;
 }
+
+/* Username Store */
+
+function userName() {
+    var name = document.getElementById("nameField").value
+    console.log(name);
+    const message = `<p>Help ${name}</p>`;
+    window.localStorage.setItem("message", message);
+}
+window.onload = function() {
+    const message = window.localStorage.getItem("message");
+    document.getElementById("message").innerHTML = message;
+}
+
 
 let playerColor = [];
 

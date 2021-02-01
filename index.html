@@ -26,16 +26,21 @@
             <div class="template">
                 <img src="assets/images/startBoard.png" alt="Start Board" class="user">
                 <div class="link" style="text-align: center;">
-                    <a href="game.html" class="btn-3d green" value="true" id="game" style="color: black;">Start Game</a>
+                    <a href="game.html" class="btn-3d green" value="true" id="game" style="color: black;">LIFT OFF</a>
                 </div>
+
+
                 <div class="username">
-                    <input class="field__input" placeholder="">
-                    <span class="field__label-wrap">
-                        <span class="field__label" style="color: #EFEA5A;">Username</span>
-                    </span>
+                    <form id="nameForm">
+                        <input id="nameField" type="text" maxlength="20" value="Enter Username" onfocus="this.value=''">
+                        <input type="button" onclick="userName()" value="submit">
+                    </form>
                 </div>
             </div>
         </div>
+
+
+
     <script src="assets/js/index.js"></script>
     </body>
 
