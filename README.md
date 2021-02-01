@@ -28,14 +28,14 @@
 3. [Bugs and De-bugging](#bugs)
    - Known bugs
    - Solutions 
-4. [Technologies Used](#Languages)
+4. [Technologies Used](#languages)
    - Languages Utilised
    - Online Material
    - Tools and Databases Used
 5. [Project Deployment](#deployment)
    - Process of Deployment
    - How to create local version
-6. [References](#References)
+6. [References](#references)
 7. [Acknowledgements](#acknowledge)
 
 
@@ -154,7 +154,7 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 -  I hope in the future I can progress the animation and some different level tiers. 
 --------------------
 
-# Testing 
+# Testing <a name="testing"></a>
 
 ## Jasmine Testing 
 
@@ -212,10 +212,15 @@ center the button ontop of my score board image.
     ![Homepage Styline](assets/images/homepageStyling.png)
     - SOLUTION: To arrange and size the scoreboard, I need to place the image inside another div and position it absolute in relation
     to it's parent div.
+
+- Nearly coming to a close with the homepage, everything has full interactivity and works. Now when the username submit button is clicked it produces a personalised 
+message telling the user how to start.
+
+    ![homepage Message](assets/images/homepageMessage.png)
     
 
 
-# Bugs / De-Bugging
+# Bugs / De-Bugging <a name="bugs"></a>
 
 1. My first known bug was encountered when trying to excecute the game function "flash" for the first time. "Flash" was not defined in "gameFlash":
 
@@ -304,6 +309,20 @@ white, orange and lime light removed, I could click the the pink and blue button
 
    After testing and trials, I realised that the z-index was placing the last div in above the rest and therefore, I couldn't click the lights from button-box1/button-box2
    because they were ordered underneath button-box3.
+
+9. Came across a small issue with the homepage. The user can click submit even with no name entered. Will need to create a method that 
+needs the user input to be 3 letters or more.
+
+   - ### Issue Fixed:
+
+
+# Technologies Used <a name="languages"></a>
+
+# Project Deployment <a name="deployment"></a>
+
+# References <a name="references"></a>
+
+# Acknowledgements <a name="acknowledge"></a>
 
 
 
