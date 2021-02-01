@@ -1,8 +1,8 @@
 body {
-    box-sizing: border-box;
     border: 0;
     margin: 0;
     background: #080708;
+    font-family: 'Source Code Pro', monospace;
 }
 
 #foreground {
@@ -42,7 +42,6 @@ body {
     display: flex;
     position: absolute;
     justify-content: center;
-    
     flex-wrap: nowrap;
     z-index: 6;
 }
@@ -54,6 +53,18 @@ body {
     width: 20vw;
 
     animation: LINTON 5s infinite ease-in;
+}
+
+.text-color {
+  color: lime; 
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+span {
+  animation: blink 1s infinite;
 }
 
 .container {
@@ -74,7 +85,7 @@ body {
 .template {
     border: 2px solid burlywood;
     position: absolute;
-    max-width: 100%;
+    max-width: 150%;
     height: 100%;
     text-align: center;
     display: flex;
@@ -82,6 +93,38 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
+}
+
+#message {
+    position: absolute;
+    align-self: center;
+    font-size: 20px;
+    height: auto;
+    border: 2px solid whitesmoke;
+    border-bottom: none;
+    background-color: black;
+    width: 50%;
+}
+
+.link {
+    position: absolute;
+    align-self: center;
+    height: auto;
+    border: 2px solid whitesmoke;
+    border-top: none;
+    background-color: black;
+    width: 50%;
+    margin-top: 35%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#start {
+    margin-right: 100px;
+}
+
+.hide-display {
+    display: none;
 }
 
 img {
@@ -96,10 +139,8 @@ img {
 .button-box1 {
     z-index: 6;
     border: 2px solid red;
-    width: 40%;
-    height: 35%;
-    margin-top: 5%;
-    margin-right: 3%;
+    width: 20%;
+    margin-bottom: 7%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -112,10 +153,9 @@ img {
 .button-box2 {
     z-index: 6;
     border: 2px solid yellow;
-    width: 40%;
+    width: 20%;
     height: 10%;
-    margin-top: 9%;
-    margin-right: 3%;
+    margin-top: 6%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -128,10 +168,9 @@ img {
 .button-box3 {
     z-index: 6;
     border: 2px solid purple;
-    margin-top: 30%;
-    width: 40%;
+    margin-top: 19%;
+    width: 20%;
     height: 10%;
-    margin-right: 3%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -143,55 +182,43 @@ img {
 
 
 #pink {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
-    border: 4px solid #F7AEF8;
+    border: 5px solid #F7AEF8;
     align-self: auto;
 }
 
 #blue {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
-    border: 4px solid #00B2CA;
+    border: 5px solid #00B2CA;
     align-self: auto;
 }
 
 #white {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
-    border: 4px solid #E7E6F7;
+    border: 5px solid #E7E6F7;
     align-self: auto;
 }
 
 #lime {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
     border: 4px solid #9EE493;
     align-self: auto;
 }
 
 #orange {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
     border: 4px solid #F79256;
     align-self: auto;
-}
-
-.link {
-    z-index: 6;
-    border: 2px solid purple;
-    max-width: 100%;
-    max-height: 100%;
-    align-self: center;
-    align-items: center;
-    position: absolute;
-    margin-top: 45%;
-    padding-right: 37%;
 }
 
 button {
@@ -324,4 +351,12 @@ h1 {
     100% {
         transform: translateX(0px) translateY(200px) rotate(-3deg);
     }
+}
+
+@keyframes type3{ 
+  from {width: 0%;} 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
 }

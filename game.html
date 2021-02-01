@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Game Page</title>
     </head>
@@ -15,9 +16,6 @@
         <div id="midground"></div>
         <div id="foreground"></div>
 
-        <div id="message" style="color: aliceblue;">
-        </div>
-
         <div id="linton">
             <img src="assets/images/linton.png" alt="Linton Icon" class="linton">
         </div>
@@ -25,31 +23,32 @@
         <div id="turn">    
         </div>
 
-        <div class="container">
+        <div class="container" id="mainScreen">
             <div class="template">
-                <img src="assets/images/LINTON-LIGHT-BOARD.png" alt="Linton's Lights">
-            </div>
-
-            <div class="button-box1">
+                <img src="assets/images/startBoard.png" alt="Linton's Lights">
+                <div class="button-box1">
                     <div id="pink" class="gamebutton1"></div>
                     <div id="blue" class="gamebutton2"></div>
-            </div>
+                </div>
 
 
-            <div class="button-box2">
+                <div class="button-box2">
                     <div id="white" class="gamebutton3"></div>
-            </div>
+                </div>
 
                 
-            <div class="button-box3">
+                <div class="button-box3">
                     <div id="lime" class="gamebutton4"></div>
                     <div id="orange" class="gamebutton5"></div>
+                </div>
             </div>
 
+            <div id="message">
+            </div>
 
             <div class="link" style="text-align: center;">
-                    <a href="game.html" class="btn-3d green" value="true" id="finish" onclick="endGame()" style="color: black;">Restart Game</a>
                     <button type="button" class="btn-3d" value="true" id="start" onclick="startGame()" style="color: black;">Start Game</button>
+                    <a href="game.html" class="btn-3d green" value="true" id="finish" onclick="endGame()" style="color: black;">Restart Game</a>
             </div>
         </div>
 
