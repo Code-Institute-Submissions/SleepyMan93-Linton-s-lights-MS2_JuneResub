@@ -351,57 +351,6 @@ a:link {
     }
     }
 
-/* Medium Screens (Portrait Tablet and Large Phones */
-
-@media only screen and (min-width: 600px) {
-
-    .typewriter {
-        font-size: 20px;
-    }
-
-    .typewriter2 {
-        font-size: 20px;
-    }
-
-    .typewriter3 {
-        font-size: 20px;
-    }
-
-    .btn-3d {
-        font-size: 20px;
-    }
-
-    .speech-box {
-        margin-top: 200px;
-    }
-
-    #introMessage {
-        margin-left: 130px;
-    }
-}
-
-@keyframes LINTON {
-
-    0% {
-        transform: translateX(-40px) translateY(275px) rotate(-3deg);
-    }
-
-    25% {
-        transform: translateX(-39.5px) translateY(282px) rotate(0deg);
-    }
-    50% {
-        transform: translateX(-40px) translateY(278px) rotate(3deg);
-    }
-    75% {
-        transform: translateX(-39.7px) translateY(280px) rotate(0deg);
-    }
-    100% {
-        transform: translateX(-40px) translateY(275px) rotate(-3deg);
-    }
-
-    }
-
-    
 /* Large Devices (Laptops/Desktop) */
 @media only screen and (min-width: 992px) {
     .btn-3d {
@@ -445,6 +394,26 @@ a:link {
     }
 }
 
+/* Medium Screens (Portrait Tablet and Large Phones */
+
+@media only screen and (min-width: 600px) {
+
+    .typewriter {
+        font-size: 20px;
+    }
+
+    .typewriter2 {
+        font-size: 20px;
+    }
+
+    .typewriter3 {
+        font-size: 20px;
+    }
+
+    .btn-3d {
+        font-size: 20px;
+    }
+}
 
 
 
