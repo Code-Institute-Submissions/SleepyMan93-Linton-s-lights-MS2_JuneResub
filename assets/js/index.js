@@ -35,12 +35,6 @@ var x = window.matchMedia("(max-width: 550px)")
 sizing(x) // Call listener function at run time
 x.addListener(sizing) // Attach listener function on state changes
 
-/* Music */
-
-function winAudio() {
-    winSong.play();
-}
-
 
 /* Username Store and Messages */
 
@@ -53,9 +47,6 @@ function userName() {
     <p class="typewriter3">Your mission statement awaits!<span>|</span></p>`;
     $("#introMessage").addClass("speech-box");
     document.getElementById("introMessage").innerHTML = introMessage;
-
-    console.log(name);
-    console.log(introMessage);
 
 
     var message = `<p class="text-color">HEEELLP! MY SHIP... IT'S ABOUT TO CRASH...</p> 
@@ -306,6 +297,11 @@ function checkMove() {
         console.log("Good Move!")
     }
 }
+
+function winAudio() {
+    winSong.play();
+}
+
 
 function winGame() {
     flashLight();
