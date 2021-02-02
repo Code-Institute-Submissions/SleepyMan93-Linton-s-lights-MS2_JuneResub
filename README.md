@@ -257,6 +257,10 @@ tried too many times to do all 20 rounds...
 
    ![WinGame Message](assets/images/winningMessage.png)
 
+- TEST: Using developer tools to help with viewport issues. [ami.responsivedesign](http://ami.responsivedesign.is) really helped in collaboration with chrome
+dev tools. Saved a lot of time having to commit just to see changes. From the screenshot, I saw there was a few teaks still needed to make it completely responsive:
+   ![Final Stages](assets/images/finalStages.png)
+
 ## HTML and CSS checks
 
 - HTML: My first HTML check returned only one error. Project completion 90%: 

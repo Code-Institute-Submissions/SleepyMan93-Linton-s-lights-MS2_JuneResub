@@ -286,7 +286,11 @@ function winGame() {
     on = false;
     win = true;
     let winning = document.getElementById("winningJingle");
-    audio.play();
+    function playAudio() {
+        if (win = true) {
+            winning.play()
+        }
+    }
 }
 
 

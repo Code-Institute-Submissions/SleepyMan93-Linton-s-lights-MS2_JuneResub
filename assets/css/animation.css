@@ -343,48 +343,45 @@ a:link {
         width: 60%;
     }
 
+    #nameField {
+        font-size: 10px;
+    }
+
     .link {
         margin-top: 20%;
     }
 
+    .btn-3d {
+        font-size: 7px;
+        margin: 30px 10px 10px;
+    }
+
+    .submit {
+        font-size: 10px;
+    }
+
+}
+
+
+
+
     @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(200px) rotate(-3deg);
+        transform: translateX(0) translateY(100px) rotate(-3deg);
     }
     25% {
-        transform: translateX(0.5px) translateY(207px) rotate(0deg);
+        transform: translateX(0.5px) translateY(107px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(203px) rotate(3deg);
+        transform: translateX(0px) translateY(103px) rotate(3deg);
     }
     75% {
-        transform: translateX(0.5px) translateY(205px) rotate(0deg);
+        transform: translateX(0.3px) translateY(105px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(200px) rotate(-3deg);
+        transform: translateX(0px) translateY(100px) rotate(-3deg);
     }
-}
-}
-
-
-
-@keyframes LINTON {
-    0% {
-        transform: translateX(-20px) translateY(-40px) rotate(-3deg);
     }
-    25% {
-        transform: translateX(-19.5px) translateY(-33px) rotate(0deg);
-    }
-    50% {
-        transform: translateX(-20px) translateY(-37px) rotate(3deg);
-    }
-    75% {
-        transform: translateX(-19.5px) translateY(-35px) rotate(0deg);
-    }
-    100% {
-        transform: translateX(-20px) translateY(-40px) rotate(-3deg);
-    }
-}
 
 
 
