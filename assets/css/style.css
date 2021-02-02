@@ -54,7 +54,7 @@ body {
 
 .linton-img {
     position: absolute;
-    z-index: 8;
+    z-index: 9;
     height: auto;
     width: 30vw;
 
@@ -400,7 +400,7 @@ h1 {
 
 /* Small Screens (mobiles and below)*/
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
 
     #pink {
         height: 35px;
@@ -455,22 +455,25 @@ h1 {
 
 }
 
-    @keyframes LINTON {
+@keyframes LINTON {
+
     0% {
-        transform: translateX(-40px) translateY(80px) rotate(-3deg);
+        transform: translateX(-40px) translateY(275px) rotate(-3deg);
     }
+
     25% {
-        transform: translateX(-39.5px) translateY(87px) rotate(0deg);
+        transform: translateX(-39.5px) translateY(282px) rotate(0deg);
     }
     50% {
-        transform: translateX(-40px) translateY(83px) rotate(3deg);
+        transform: translateX(-40px) translateY(278px) rotate(3deg);
     }
     75% {
-        transform: translateX(-39.7px) translateY(85px) rotate(0deg);
+        transform: translateX(-39.7px) translateY(280px) rotate(0deg);
     }
     100% {
-        transform: translateX(-40px) translateY(80px) rotate(-3deg);
+        transform: translateX(-40px) translateY(275px) rotate(-3deg);
     }
+
     }
 
 @media (min-width: 768px) {
@@ -531,6 +534,13 @@ h1 {
         padding: 0px 5px 10px 5px;
         margin-bottom: 5px;
         width: 80%;
+    }
+
+    #introMessage {
+        margin-left: 270px;
+        margin-top: 10px;
+        height: 13%;
+        width: 35%;
     }
 
 }
