@@ -148,7 +148,7 @@ img {
     max-height: 100%;
     align-self: auto;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .username {
@@ -331,19 +331,19 @@ a:link {
 
     @keyframes LINTON {
     0% {
-        transform: translateX(-40px) translateY(80px) rotate(-3deg);
+        transform: translateX(-20px) translateY(80px) rotate(-3deg);
     }
     25% {
-        transform: translateX(-39.5px) translateY(87px) rotate(0deg);
+        transform: translateX(-19.5px) translateY(87px) rotate(0deg);
     }
     50% {
-        transform: translateX(-40px) translateY(83px) rotate(3deg);
+        transform: translateX(-20px) translateY(83px) rotate(3deg);
     }
     75% {
-        transform: translateX(-39.7px) translateY(85px) rotate(0deg);
+        transform: translateX(-19.7px) translateY(85px) rotate(0deg);
     }
     100% {
-        transform: translateX(-40px) translateY(80px) rotate(-3deg);
+        transform: translateX(-20px) translateY(80px) rotate(-3deg);
     }
     }
 
@@ -439,6 +439,8 @@ a:link {
         font-size: 20px
     }
 }
+
+
 
 
 

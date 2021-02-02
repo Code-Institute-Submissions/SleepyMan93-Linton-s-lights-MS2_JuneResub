@@ -1,3 +1,5 @@
+/* Used the foundations in this video to help build my js - https://www.youtube.com/watch?v=n_ec3eowFLQ */
+
 let win = false;
 let intervalId;
 let flash;
@@ -53,7 +55,7 @@ function userName() {
 
     <p class="text-color">${name}, my name is Linton and I'm on a super important mission to help save our planet and I need YOUR help!</p>
     <p class="text-color">Will you be the hero that Earth needs?</p>
-    <p class="text-color">To restore power, the mainframe needs a color series. There are 20 rounds to save Earth. When the mainframe flashes a color, wait and then
+    <p class="text-color">To restore power, the mainframe needs a color series. There are 15 rounds to save Earth. When the mainframe flashes a color, wait and then
     push the same color. If you get it right, the mainframe will then flash one more light in the series.</p>
     <p class="text-color">All you have to do is REMEMBER the pattern and repush the lights in order...
     Reckon you could do that?... That's right! I KNOW YOU CAN.</p>
@@ -286,7 +288,7 @@ function checkMove() {
                 }, 800);
     } 
 
-    if (playerColor.length == 5 && good == true) {
+    if (playerColor.length == 15 && good == true) {
         winGame();
     }
 

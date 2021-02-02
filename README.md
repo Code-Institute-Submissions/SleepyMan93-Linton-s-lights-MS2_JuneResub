@@ -3,6 +3,9 @@
 #### Code Institute Full Stack Development Dipoloma: Milestone Project 2 - Interactive Frontend Development 
 ##### Created by William Donovan
 
+![Project Displays](assets/images/finalDesigns.png)
+[link to Project](https://sleepyman93.github.io/Linton-s-lights-MS2/)
+
 # Table of Contents 
 
 1. [UX Development](#uxdev)
@@ -152,6 +155,11 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 
 -  I hope in the future I can progress the animation and some different level tiers. 
 -  Improve Linton's animation and messages.
+-  Improve on the design response. Lost my way a little towards the end of the project. Would like to
+go back into the code and reshape the DOM tree.
+-  Use sound for the lights and animate the spaceship
+
+
 --------------------
 
 # Testing <a name="testing"></a>
@@ -276,7 +284,9 @@ feature anywhere in my code. Unsure of how to rectify?
 
 - Grace my 12 year old cousin tried out the web application for me on her home desktop andn loved playing the game. She said 
 sounds when pressing the lights would have made it more fun but she really enjoyed the story and charavter Linton.
-   - Design was easy to use, she typed in loads of different usernames that all worked and loved how the message displayed with her username
+   - Design was easy to use, she typed in loads of different usernames that all worked and loved how the message displayed with her username.
+
+- My friends son George won the game and wanted some level of celebration. Created a simple congrats message with soundbite for the winner.
 
 # Bugs / De-Bugging <a name="bugs"></a>
 
@@ -385,6 +395,11 @@ styling technique only occurs on mobile screen sizes:
 11. Found a weird bug when trying to load pages from index.html to game.html. In my JS file I've made sure that the page is loaded with .template running the class 
 hide-display (display: none). But when the page loads, you can see the .template and lights before the java starts and hides the content.
 
+   - ### Issue Fixed: 
+   I realised some music I deleted from the project was still linked in the game.html header.
+
+   ![Audio Bug](assets/images/audioBug.png)
+
 # Technologies Used <a name="languages"></a>
 
 1. [jQuery](https://jquery.com/)
@@ -392,6 +407,7 @@ hide-display (display: none). But when the page loads, you can see the .template
 3. [CSS 4](https://www.w3schools.com/w3css/)
 5. [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 6. [JavaScript](https://www.javascript.com/)
+7. [Dev Tools](http://ami.responsivedesign.is/)
 
 # Project Deployment <a name="deployment"></a>
 
@@ -414,6 +430,10 @@ branch: Master, Root directory and hit save. This works as I've pushed every com
 
 1. My tutor Niashant Kumar. He was really informative, friendly and helped inspire me to create this project. I feel like it was a rather ambitious first attempt at Interactive
 Frontend but Nishant really believed in my ideas and content which got me over the line. 
+
+2. There were at some commits times when the design for laptop and bigger screen sizes was perfect but changed some
+code that I didn't have time to go back and revert to. Would love some more time to clean this up but hope my project cycle 
+is enough for now.
 
 
 
