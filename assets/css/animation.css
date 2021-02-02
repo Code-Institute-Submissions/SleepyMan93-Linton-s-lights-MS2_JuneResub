@@ -401,12 +401,7 @@ a:link {
 
     }
 
- @media (min-width: 768px) {
-    .container {
-        max-width: 700px;
-    }
-}
-
+    
 /* Large Devices (Laptops/Desktop) */
 @media only screen and (min-width: 992px) {
     .btn-3d {
