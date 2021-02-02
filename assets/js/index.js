@@ -301,7 +301,8 @@ function checkMove() {
 }
 
 function playAudio() {
-    song[0].play();
+console.log('clicked');
+    song.play();
 }
 
 function winGame() {

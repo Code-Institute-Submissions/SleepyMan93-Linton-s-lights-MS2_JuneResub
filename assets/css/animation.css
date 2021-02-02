@@ -331,19 +331,19 @@ a:link {
 
     @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(150px) rotate(-3deg);
+        transform: translateX(0) translateY(80px) rotate(-3deg);
     }
     25% {
-        transform: translateX(0.5px) translateY(157px) rotate(0deg);
+        transform: translateX(0.5px) translateY(87px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(153px) rotate(3deg);
+        transform: translateX(0px) translateY(83px) rotate(3deg);
     }
     75% {
-        transform: translateX(0.3px) translateY(155px) rotate(0deg);
+        transform: translateX(0.3px) translateY(85px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(150px) rotate(-3deg);
+        transform: translateX(0px) translateY(80px) rotate(-3deg);
     }
     }
 
