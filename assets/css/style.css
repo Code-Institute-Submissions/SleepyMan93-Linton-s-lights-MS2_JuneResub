@@ -488,7 +488,7 @@ h1 {
     }
 
     .link {
-        margin-top: 120%;
+        margin-top: 60%;
     }
 
     .btn-3d {
@@ -497,7 +497,7 @@ h1 {
 
     #message {
         font-size: 5px;
-        margin: 0px 10px;
+        margin: 0px 0px;
         padding-bottom: 5px;
     }
 
