@@ -40,7 +40,7 @@ body {
     animation: STAR-BACK 100000000s infinite linear;
 }
 
-.linton {
+.linton-img {
     position: absolute;
     z-index: 4;
     height: auto;
@@ -312,7 +312,7 @@ a:link {
         font-size: 20px;
     }
 
-    .linton {
+    .linton-img {
         margin-top: 0px;
     }
 
@@ -336,18 +336,20 @@ a:link {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     #introMessage {
         margin-left: 120px;
         margin-top: 180px;
         width: 60%;
     }
 
-
+    .link {
+        margin-top: 20%;
+    }
 
     @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(300px) rotate(-3deg);
+        transform: translateX(0) translateY(150px) rotate(-3deg);
     }
     25% {
         transform: translateX(0.5px) translateY(157px) rotate(0deg);
