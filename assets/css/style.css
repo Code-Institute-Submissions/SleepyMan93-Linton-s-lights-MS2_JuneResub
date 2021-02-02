@@ -400,7 +400,7 @@ h1 {
 
 /* Small Screens (mobiles and below)*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     #pink {
         height: 35px;
