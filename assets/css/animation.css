@@ -50,7 +50,7 @@ body {
 }
 
 #introMessage {
-    position: fixed;
+    position: absolute;
     z-index: 6;
     margin-left: 120px;
     width: 60%;
@@ -336,6 +336,8 @@ a:link {
     }
 }
 
+
+
 @keyframes LINTON {
     0% {
         transform: translateX(-20px) translateY(-40px) rotate(-3deg);
@@ -355,29 +357,4 @@ a:link {
 }
 
 
-/* Small Devices (Phones, tablets) */
-@media only screen and (min-width: 600px) {
-    .link {
-        margin-top: 200px;
-    }
-}
 
-
-
-@keyframes LINTON {
-    0% {
-        transform: translateX(0) translateY(150px) rotate(-3deg);
-    }
-    25% {
-        transform: translateX(0.5px) translateY(157px) rotate(0deg);
-    }
-    50% {
-        transform: translateX(0px) translateY(153px) rotate(3deg);
-    }
-    75% {
-        transform: translateX(0.5px) translateY(155px) rotate(0deg);
-    }
-    100% {
-        transform: translateX(0px) translateY(150px) rotate(-3deg);
-    }
-}

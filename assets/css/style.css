@@ -443,9 +443,28 @@ h1 {
 
 }
 
-/* Small Devices (Phones, tablets) */
-@media only screen and (min-width: 600px) {
-    #message {
-        font-size: 5px;
+@media only screen and (min-width: 630px) {
+
+    #pink {
+        height: 60px;
+        width: 60px;
+        margin-right: 90px;
     }
+
+    #blue {
+        height: 60px;
+        width: 60px;
+    }
+
+    #white {
+        height: 60px;
+        width: 60px;
+    }
+
+    #lime {
+        height: 60px;
+        width: 60px;
+        margin-right: 90px;
+    }
+
 }
