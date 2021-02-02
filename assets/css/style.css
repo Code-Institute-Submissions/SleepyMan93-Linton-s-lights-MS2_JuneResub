@@ -444,56 +444,73 @@ h1 {
 
 }
 
-@media only screen and (max-width: 450px) {
+/* Small Screens (mobiles and below)*/
+
+@media only screen and (max-width: 550px) {
 
     #pink {
-        height: 50px;
-        width: 50px;
-        margin-right: 60px;
-        margin-bottom: 0px;
+        height: 35px;
+        width: 35px;
+        margin-right: 30px;
+        margin-top: 10px;
     }
 
     #blue {
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
+        margin-top: 10px;
     }
 
     #white {
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
 
     #lime {
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
         margin-right: 60px;
     }
 
        #orange {
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
 
     .button-box3 {
-        margin-top: 50px;
+        margin-top: 80px;
     }
+
+    .link {
+        margin-top: 120%;
+    }
+
+    .btn-3d {
+        font-size: 10px;
+    }
+
+    #message {
+        font-size: 5px;
+        margin: 0px 10px;
+        padding-bottom: 5px;
+    }
+
+}
 
     @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(0px) rotate(-3deg);
+        transform: translateX(0) translateY(100px) rotate(-3deg);
     }
     25% {
-        transform: translateX(0.5px) translateY(7px) rotate(0deg);
+        transform: translateX(0.5px) translateY(107px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(3px) rotate(3deg);
+        transform: translateX(0px) translateY(103px) rotate(3deg);
     }
     75% {
-        transform: translateX(0.5px) translateY(5px) rotate(0deg);
+        transform: translateX(0.3px) translateY(105px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(0px) rotate(-3deg);
+        transform: translateX(0px) translateY(100px) rotate(-3deg);
     }
-}
-
-}
+    }

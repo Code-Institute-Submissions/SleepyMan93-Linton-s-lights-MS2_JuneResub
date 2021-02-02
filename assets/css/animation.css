@@ -336,6 +336,8 @@ a:link {
     }
 }
 
+/* Small Screens (mobiles and below)*/
+
 @media only screen and (max-width: 550px) {
     #introMessage {
         margin-left: 120px;
