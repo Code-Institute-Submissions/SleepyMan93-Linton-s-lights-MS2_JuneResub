@@ -382,6 +382,9 @@ styling technique only occurs on mobile screen sizes:
    
    ![Input Field Zoom Fix](assets/images/inputFieldZoomFix.png)
 
+11. Found a weird bug when trying to load pages from index.html to game.html. In my JS file I've made sure that the page is loaded with .template running the class 
+hide-display (display: none). But when the page loads, you can see the .template and lights before the java starts and hides the content.
+
 # Technologies Used <a name="languages"></a>
 
 1. [jQuery](https://jquery.com/)

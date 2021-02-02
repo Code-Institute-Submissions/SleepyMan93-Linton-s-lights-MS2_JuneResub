@@ -35,7 +35,49 @@ var x = window.matchMedia("(max-width: 550px)")
 sizing(x) // Call listener function at run time
 x.addListener(sizing) // Attach listener function on state changes
 
-/* Theme Music */
+/* Music */
+
+function winAudio() {
+    winSong.play();
+}
+
+
+/* Username Store and Messages */
+
+function userName() {
+    var name = document.getElementById("nameField").value;
+    
+
+    var introMessage = `<p class="typewriter">Now we're ready for LIFT OFF ${name}!</p>
+    <p class="typewriter2">Push the BIG red button...</p>
+    <p class="typewriter3">Your mission statement awaits!<span>|</span></p>`;
+    $("#introMessage").addClass("speech-box");
+    document.getElementById("introMessage").innerHTML = introMessage;
+
+    console.log(name);
+    console.log(introMessage);
+
+
+    var message = `<p class="text-color">HEEELLP! MY SHIP... IT'S ABOUT TO CRASH...</p> 
+
+    <p class="text-color">${name}, my name is Linton and I'm on a super important mission to help save our planet and I need YOUR help!</p>
+    <p class="text-color">Will you be the hero that Earth needs?</p>
+    <p class="text-color">To restore power, the mainframe needs a color series. There are 20 rounds to save Earth. When the mainframe flashes a color, wait and then
+    push the same color. If you get it right, the mainframe will then flash one more light in the series.</p>
+    <p class="text-color">All you have to do is REMEMBER the pattern and repush the lights in order...
+    Reckon you could do that?... That's right! I KNOW YOU CAN.</p>
+    <p class="text-color">Gods speed ${name}!!. If you need me, just click on "Restart Game" to remind yourself of the mission...<span>|</span> </p>`;
+    window.localStorage.setItem("message", message);
+
+    console.log(message);
+}
+
+window.onload = function() {
+    $(".template").addClass("hide-display");
+    $(".linton-img").addClass("hide-display");
+    var message = window.localStorage.getItem("message");
+    document.getElementById("message").innerHTML = message;
+}
 
 
 /* Start Button */
@@ -76,43 +118,6 @@ function endGame() {
 function level() {
     easy = false;
     hard = false;
-}
-
-/* Username Store and Messages */
-
-function userName() {
-    var name = document.getElementById("nameField").value;
-    
-
-    var introMessage = `<p class="typewriter">Now we're ready for LIFT OFF ${name}!</p>
-    <p class="typewriter2">Push the BIG red button...</p>
-    <p class="typewriter3">Your mission statement awaits!<span>|</span></p>`;
-    $("#introMessage").addClass("speech-box");
-    document.getElementById("introMessage").innerHTML = introMessage;
-
-    console.log(name);
-    console.log(introMessage);
-
-
-    var message = `<p class="text-color">HEEELLP! MY SHIP... IT'S ABOUT TO CRASH...</p> 
-
-    <p class="text-color">${name}, my name is Linton and I'm on a super important mission to help save our planet and I need YOUR help!</p>
-    <p class="text-color">Will you be the hero that Earth needs?</p>
-    <p class="text-color">To restore power, the mainframe needs a color series. There are 20 rounds to save Earth. When the mainframe flashes a color, wait and then
-    push the same color. If you get it right, the mainframe will then flash one more light in the series.</p>
-    <p class="text-color">All you have to do is REMEMBER the pattern and repush the lights in order...
-    Reckon you could do that?... That's right! I KNOW YOU CAN.</p>
-    <p class="text-color">Gods speed ${name}!!. If you need me, just click on "Restart Game" to remind yourself of the mission...<span>|</span> </p>`;
-    window.localStorage.setItem("message", message);
-
-    console.log(message);
-}
-
-window.onload = function() {
-    $(".template").addClass("hide-display");
-    $(".linton-img").addClass("hide-display");
-    var message = window.localStorage.getItem("message");
-    document.getElementById("message").innerHTML = message;
 }
 
 /* Game reset */
@@ -302,16 +307,12 @@ function checkMove() {
     }
 }
 
-function playAudio() {
-    winSong.play();
-}
-
 function winGame() {
     flashLight();
     turnCounter.innerHTML = `CONGRATULATIONS! Power has been restored to my ship. Saving the world today was down to YOU!`;
     on = false;
     win = true;
-    playAudio();
+    winAudio();
 }
 
 
