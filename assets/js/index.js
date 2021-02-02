@@ -15,9 +15,17 @@ const turnCounter = document.getElementById('turn');
 
 console.log(on)
 
+/* Theme Music */
+
+
 /* Start Button */
 
 function startGame() {
+    $("#message").addClass("hide-display");
+    $(".template").removeClass("hide-display");
+    $(".linton").removeClass("hide-display");
+
+
     if (start.value = true) {
         on = true;
         initialiseGame();
@@ -51,30 +59,43 @@ function level() {
     hard = false;
 }
 
-/* Username Store */
+/* Username Store and Messages */
 
 function userName() {
     var name = document.getElementById("nameField").value;
+    
 
     var introMessage = `<p class="typewriter">Now we're ready for LIFT OFF ${name}!</p>
-    <p class="typewriter2">Push the BIG red button!<span>|</span></p>`;
+    <p class="typewriter2">Push the BIG red button...</p>
+    <p class="typewriter3">Our mission statement awaits!<span>|</span></p>`;
+    $("#introMessage").addClass("speech-box");
     document.getElementById("introMessage").innerHTML = introMessage;
 
     console.log(name);
     console.log(introMessage);
 
-    var message = `<p>HEEELLP! MY SHIP... IT'S ABOUT TO CRASH... ${name}, My name is Linton and i'm on a super important mission to help save our planet and I need YOUR help!!
-    Will you be the hero that Earth needs? To restore power, the mainframe needs a color series. There are 20 rounds to save Earth. When the mainframe flashes a color, wait and then
-    push the same color. If you get it right, the mainframe will then flash one more light per round. All you have to do is REMEMBER the pattern and repush the lights in order...
-    Reckon you could do that?... That's right! I KNOW YOU CAN. Gods speed ${name}!!. If you need me, just click on me to remind yourself of the mission... </p>`;
+
+    var message = `<p class="text-color">HEEELLP! MY SHIP... IT'S ABOUT TO CRASH...</p> 
+
+    <p class="text-color">${name}, my name is Linton and I'm on a super important mission to help save our planet and I need YOUR help!</p>
+    <p class="text-color">Will you be the hero that Earth needs?</p>
+    <p class="text-color">To restore power, the mainframe needs a color series. There are 20 rounds to save Earth. When the mainframe flashes a color, wait and then
+    push the same color. If you get it right, the mainframe will then flash one more light in the series.</p>
+    <p class="text-color">All you have to do is REMEMBER the pattern and repush the lights in order...
+    Reckon you could do that?... That's right! I KNOW YOU CAN.</p>
+    <p class="text-color">Gods speed ${name}!!. If you need me, just click on me to remind yourself of the mission...<span>|</span> </p>`;
     window.localStorage.setItem("message", message);
 
     console.log(message);
 }
+
 window.onload = function() {
+    $(".template").addClass("hide-display");
+    $(".linton").addClass("hide-display");
     var message = window.localStorage.getItem("message");
     document.getElementById("message").innerHTML = message;
 }
+
 
 
 let playerColor = [];

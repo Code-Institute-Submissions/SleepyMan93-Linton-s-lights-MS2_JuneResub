@@ -209,15 +209,40 @@ code to see why it only goes to level 5.
 - Moving back onto styling my homepage and creating the landing tile. I've created a button that links to the game page with basic styling but I can't seem to 
 center the button ontop of my score board image. 
 
-    ![Homepage Styline](assets/images/homepageStyling.png)
-    - SOLUTION: To arrange and size the scoreboard, I need to place the image inside another div and position it absolute in relation
+   ![Homepage Styling](assets/images/homepageStyling.png)
+
+   - SOLUTION: To arrange and size the scoreboard, I need to place the image inside another div and position it absolute in relation
     to it's parent div.
 
 - Nearly coming to a close with the homepage, everything has full interactivity and works. Now when the username submit button is clicked it produces a personalised 
 message telling the user how to start.
 
-    ![homepage Message](assets/images/homepageMessage.png)
-    
+   ![homepage Message](assets/images/homepageMessage.png)
+
+- TEST: The text typing animation and the time needed to increase for it to appear relistic but with each time increase, it slows down the 
+typing. Need to find a way of implementing animation delay and keeping the text hidden.
+
+   ![Type Writer Animation](assets/images/typewriterAnimation.png)
+
+   - SOLUTION: I tried multiple ways of achieving this effect for the long segment of text but became too difficult and time consuming,
+    could possibly introduce this animation properly in the future.
+
+- TEST: Pushing the start button at the bottom of instructions and realised the turn counter pushes the game down when it's DIV appears. Placing the turn
+function inside the container to keep everything harmonious and clean.
+
+- One of my final hurdles before applying finishing touches was transitioning from having the instructions on screen to having showing the game 
+mainframe. By applying some simple jQuery I could attach display classes to the startGame onClick function.
+
+   - METHOD: ![Final Start Game](assets/images/finalStartGame.png)
+
+- Decided the lights for the game looked really flat compared to everything else. Tried styling them as buttons first:
+
+   ![Box Shadow Start](assets/images/boxStylingStart.png)
+
+   - Although the concept could have worked, the game is called Linton's Lights so needed someting that resembled something closer to a 
+   light. This was the final styling I went for:
+
+   ![Box Styling Final](assets/images/boxStylingFinal.png)
 
 
 # Bugs / De-Bugging <a name="bugs"></a>

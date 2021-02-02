@@ -52,11 +52,13 @@ body {
 #introMessage {
     position: fixed;
     z-index: 6;
+    margin-left: 5px;
     width: 25%;
     height: 10%;
 }
 
 .speech-box {
+    margin-top: 330px;
     background-color: black;
     border: 2px solid white;
 }
@@ -64,8 +66,8 @@ body {
 .typewriter {
   color: lime; 
   font-size: 15px;
-  margin: 10px 0 0 0;
-  margin-left: 5px;
+  margin: 2px 0 0 0;
+  margin-left: 6px;
   white-space: nowrap;
   overflow: hidden;
   width: 40em;
@@ -75,11 +77,22 @@ body {
 .typewriter2 {
     color: lime; 
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 6px;
+    margin-bottom: -1px;
     white-space: nowrap;
     overflow: hidden;
     width: 40em;
     animation: type2 7s steps(60, end);
+}
+
+.typewriter3 {
+    color: lime; 
+    font-size: 15px;
+    margin-left: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 40em;
+    animation: type2 10s steps(60, end);
 }
 
 span {
@@ -254,6 +267,12 @@ a:link {
 } 
 
 @keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes type3{
   0%{width: 0;}
   50%{width: 0;}
   100%{ width: 100; } 

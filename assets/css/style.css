@@ -38,12 +38,13 @@ body {
     animation: STAR-BACK 100000000s infinite linear;
 }
 
-.game-title {
-    display: flex;
+#turn {
     position: absolute;
-    justify-content: center;
-    flex-wrap: nowrap;
-    z-index: 6;
+    width: 100%;
+    height: auto;
+    border: 2px solid whitesmoke;
+    align-self: flex-start;
+    color: whitesmoke;
 }
 
 .linton {
@@ -101,7 +102,7 @@ span {
     font-size: 20px;
     height: auto;
     border: 2px solid whitesmoke;
-    border-bottom: none;
+    padding-bottom: 10px;
     background-color: black;
     width: 50%;
 }
@@ -110,17 +111,25 @@ span {
     position: absolute;
     align-self: center;
     height: auto;
-    border: 2px solid whitesmoke;
     border-top: none;
-    background-color: black;
+    background-color: transparent;
     width: 50%;
-    margin-top: 35%;
+    margin-top: 50%;
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 #start {
     margin-right: 100px;
+    outline: none;
+}
+
+button:active {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
 }
 
 .hide-display {
@@ -138,7 +147,6 @@ img {
 
 .button-box1 {
     z-index: 6;
-    border: 2px solid red;
     width: 20%;
     margin-bottom: 7%;
     display: flex;
@@ -152,7 +160,6 @@ img {
 
 .button-box2 {
     z-index: 6;
-    border: 2px solid yellow;
     width: 20%;
     height: 10%;
     margin-top: 6%;
@@ -167,7 +174,6 @@ img {
 
 .button-box3 {
     z-index: 6;
-    border: 2px solid purple;
     margin-top: 19%;
     width: 20%;
     height: 10%;
@@ -180,13 +186,20 @@ img {
     position: absolute;
 }
 
-
 #pink {
     height: 70px;
     width: 70px;
     border-radius: 100%;
     border: 5px solid #F7AEF8;
     align-self: auto;
+    transition: top .04s linear;
+    padding: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 14px 0px rgb(243, 153, 245), 
+    1px -2px 0px 0px rgba(214, 204, 204, 0.15) inset, 
+    0px 0px 1px 0px rgb(243 152 245), 
+    0px 4px 3px 2px rgba(0, 0, 0, 0.13), 
+    -2px 3px 3px 0px rgba(0, 0, 0, 0.13);
 }
 
 #blue {
@@ -195,6 +208,13 @@ img {
     border-radius: 100%;
     border: 5px solid #00B2CA;
     align-self: auto;
+    padding: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 9px 3px rgb(1, 165, 187), 
+    1px 1px 0px 0px rgba(214, 204, 204, 0.15) inset, 
+    -1px 0px 2px 0px rgb(1, 165, 187), 
+    -4px 3px 12px 0px rgba(0, 0, 0, 0.13), 
+    -1px 3px 16px 0px rgba(0, 0, 0, 0.13);
 }
 
 #white {
@@ -203,6 +223,13 @@ img {
     border-radius: 100%;
     border: 5px solid #E7E6F7;
     align-self: auto;
+    padding: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 3px rgb(219, 216, 250), 
+    1px 1px 0px 0px rgba(214, 204, 204, 0.15) inset, 
+    0px 0px 5px 0px rgb(219, 216, 250), 
+    0px -2px 3px 5px rgba(0, 0, 0, 0.13), 
+    3px 2px 5px 6px rgba(0, 0, 0, 0.13);
 }
 
 #lime {
@@ -211,6 +238,13 @@ img {
     border-radius: 100%;
     border: 4px solid #9EE493;
     align-self: auto;
+    padding: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px 3px rgb(122, 223, 107), 
+    1px 1px 0px 0px rgba(214, 204, 204, 0.15) inset, 
+    0px 2px 0 0 rgb(122, 223, 107), 
+    0px 4px 20px 7px rgba(0, 0, 0, 0.13), 
+    -1px 2px 8px 7px rgba(0, 0, 0, 0.13);
 }
 
 #orange {
@@ -219,6 +253,13 @@ img {
     border-radius: 100%;
     border: 4px solid #F79256;
     align-self: auto;
+    padding: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 2px rgb(248, 131, 63), 
+    1px 1px 0px 0px rgba(214, 204, 204, 0.15) inset, 
+    0px 2px 4px 0px rgb(248, 131, 63), 
+    -1px 3px 14px 5px rgba(0, 0, 0, 0.13), 
+    4px 8px 10px 1px rgba(0, 0, 0, 0.13);
 }
 
 button {
@@ -244,7 +285,7 @@ button {
 .btn-3d {
 	position: relative;
 	display: inline-block;
-	font-size: 10px;
+	font-size: 15px;
     padding: 5px 20px;
 	color: #D2D7DF;
 	margin: 10px 10px 10px;
