@@ -304,8 +304,8 @@ a:link {
 
 @media only screen and (max-width: 600px) {
     #introMessage {
-        margin-left: 20px;
-        margin-top: 300px;
+        margin-left: 60px;
+        margin-top: 150px;
         width: 60%;
     }
 
@@ -314,7 +314,7 @@ a:link {
     }
 
     .link {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     .btn-3d {
