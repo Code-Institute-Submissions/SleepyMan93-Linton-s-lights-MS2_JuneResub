@@ -135,7 +135,7 @@ button:focus {
 }
 
 img {
-    max-width: 100%;
+    width: 150%;
     max-height: 100%;
     display: block; 
     order: 0;
@@ -386,10 +386,6 @@ h1 {
         transform: translateX(0px) translateY(400px) rotate(-3deg);
     }
 }
-
-@keyframes type3{ 
-  from {width: 0%;} 
-} 
 
 @keyframes blink{
   to{opacity: .0;}
