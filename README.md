@@ -158,6 +158,9 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 
 ## Jasmine Testing 
 
+- I attempted Jasmine testing but really couldn't get the automatic tests to work with this project. All my code and bugs were fixed 
+through manual testing. Know this might affect the project but it was just something I couldn't seem to get working.
+
 ## Game Testing / Life Cycle
 
 - My first piece of gaming code was to add fucntionality to the 'Start' button and create 
@@ -255,6 +258,11 @@ feature anywhere in my code. Unsure of how to rectify?
 
    ![First CSS Check](assets/images/firstCSSCheck.png)
 
+## User Testing 
+
+- Grace my 12 year old cousin tried out the web application for me on her home desktop andn loved playing the game. She said 
+sounds when pressing the lights would have made it more fun but she really enjoyed the story and charavter Linton.
+   - Design was easy to use, she typed in loads of different usernames that all worked and loved how the message displayed with her username
 
 # Bugs / De-Bugging <a name="bugs"></a>
 
@@ -349,10 +357,7 @@ white, orange and lime light removed, I could click the the pink and blue button
 9. Came across a small issue with the homepage. The user can click submit even with no name entered. Will need to create a method that 
 needs the user input to be 3 letters or more.
 
-   - ### Issue Fixed:
-
-
-
+   - ### Issue Fixed: 
 
 # Technologies Used <a name="languages"></a>
 
@@ -367,7 +372,11 @@ needs the user input to be 3 letters or more.
 - Locally: To deploy a local version through Gitpod, one must create a new terminal (^ SHIFT `). Inside the terminal, next to the "$" symbol, type: 
 **python3 -m http.server** and click enter. A port assigned 8000 should become open and the webpage can be viewed in the browser upon selecting "open in browser"
 
-- Externally: To create a public version with a shareable domain. I 
+- Externally: To create a public version with a shareable domain. You have to sign into Github and choose the repository. Anytime you make a chnage thats committed 
+you need to go back and save here for it to react online. once in the repository, move to settings. Under the settings tab scroll down to Github Pages and choose
+branch: Master, Root directory and hit save. This works as I've pushed every commit to the master branch.
+
+   ![Github Public Deployment]()
 
 # References <a name="references"></a>
 
