@@ -12,6 +12,7 @@ let hard = false;
 
 const startButton = document.getElementById('start');
 const turnCounter = document.getElementById('turn');
+let song = document.getElementById("winningJingle");
 
 console.log(on)
 
@@ -299,18 +300,20 @@ function checkMove() {
     }
 }
 
+function playAudio() {
+    song[0].play();
+}
+
 function winGame() {
     flashLight();
     turnCounter.innerHTML = `CONGRATULATIONS! Power has been restored to my ship. Saving the world today was down to YOU!`;
     on = false;
     win = true;
-    let winning = document.getElementById("winningJingle");
-    function playAudio() {
-        if (win = true) {
-            winning.play()
-        }
-    }
+    playAudio();
+    console.log(playAudio);
 }
+
+playAudio();
 
 
 

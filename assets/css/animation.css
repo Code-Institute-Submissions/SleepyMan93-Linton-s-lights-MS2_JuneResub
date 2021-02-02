@@ -300,49 +300,6 @@ a:link {
 
 /* Media Queries */
 
-/* Large Devices (Laptops/Desktop) */
-@media only screen and (min-width: 992px) {
-    .btn-3d {
-        font-size: 25px;
-        padding: 12px 12px;
-    }
-
-    .username {
-        max-width: 100%;
-    }
-
-    #nameField {
-        font-size: 20px;
-    }
-
-    .submit {
-        font-size: 20px;
-    }
-
-    .linton-img {
-        margin-top: 0px;
-    }
-
-    #introMessage {
-        margin-left: 300px;
-        margin-top: 15px;
-        height: 13%;
-        width: 35%;
-    }
-
-    .typewriter {
-        font-size: 20px;
-    }
-
-    .typewriter2 {
-        font-size: 20px;
-    }
-
-    .typewriter3 {
-        font-size: 20px
-    }
-}
-
 /* Small Screens (mobiles and below)*/
 
 @media only screen and (max-width: 550px) {
@@ -389,6 +346,74 @@ a:link {
         transform: translateX(0px) translateY(150px) rotate(-3deg);
     }
     }
+
+/* Large Devices (Laptops/Desktop) */
+@media only screen and (min-width: 992px) {
+    .btn-3d {
+        font-size: 25px;
+        padding: 12px 12px;
+    }
+
+    .username {
+        max-width: 100%;
+    }
+
+    #nameField {
+        font-size: 20px;
+    }
+
+    .submit {
+        font-size: 20px;
+    }
+
+    .linton-img {
+        margin-top: 0px;
+    }
+
+    #introMessage {
+        margin-left: 300px;
+        margin-top: 15px;
+        height: 13%;
+        width: 35%;
+    }
+
+    .typewriter {
+        font-size: 20px;
+    }
+
+    .typewriter2 {
+        font-size: 20px;
+    }
+
+    .typewriter3 {
+        font-size: 20px
+    }
+}
+
+/* Medium Screens (Portrait Tablet and Large Phones */
+
+@media only screen and (min-width: 600px) {
+    #introMessage {
+        margin-left: 200px;
+        margin-top: 200px;
+    }
+
+    .typewriter {
+        font-size: 20px;
+    }
+
+    .typewriter2 {
+        font-size: 20px;
+    }
+
+    .typewriter3 {
+        font-size: 20px;
+    }
+
+    .btn-3d {
+        font-size: 20px;
+    }
+}
 
 
 
