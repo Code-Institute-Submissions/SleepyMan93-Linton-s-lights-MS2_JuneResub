@@ -24,7 +24,6 @@
    - HTML and CSS checks using WC3 
    - User Testing
    - Peer Code Review
-   - Automatic Tests
 3. [Bugs and De-bugging](#bugs)
    - Known bugs
    - Solutions 
@@ -152,6 +151,7 @@ I used [Coloors](https://coolors.co/), an online colour palette generator for co
 # Features / Future Implementations
 
 -  I hope in the future I can progress the animation and some different level tiers. 
+-  Improve Linton's animation and messages.
 --------------------
 
 # Testing <a name="testing"></a>
@@ -243,6 +243,17 @@ mainframe. By applying some simple jQuery I could attach display classes to the 
    light. This was the final styling I went for:
 
    ![Box Styling Final](assets/images/boxStylingFinal.png)
+
+## HTML and CSS checks
+
+- HTML: My first HTML check returned only one error. Project completion 90%: 
+
+   ![First HTML Check](assets/images/firstHTMLCheck.png)
+
+- CSS: My first CSS check returned only two errors but unsure where they originate from. They both reference element names that don't
+feature anywhere in my code. Unsure of how to rectify?
+
+   ![First CSS Check](assets/images/firstCSSCheck.png)
 
 
 # Bugs / De-Bugging <a name="bugs"></a>
@@ -341,13 +352,33 @@ needs the user input to be 3 letters or more.
    - ### Issue Fixed:
 
 
+
+
 # Technologies Used <a name="languages"></a>
+
+1. [jQuery](https://jquery.com/)
+2. [Bootstrap](https://getbootstrap.com/)
+3. [CSS 4](https://www.w3schools.com/w3css/)
+5. [HTML 5](https://en.wikipedia.org/wiki/HTML5)
+6. [JavaScript](https://www.javascript.com/)
 
 # Project Deployment <a name="deployment"></a>
 
+- Locally: To deploy a local version through Gitpod, one must create a new terminal (^ SHIFT `). Inside the terminal, next to the "$" symbol, type: 
+**python3 -m http.server** and click enter. A port assigned 8000 should become open and the webpage can be viewed in the browser upon selecting "open in browser"
+
+- Externally: To create a public version with a shareable domain. I 
+
 # References <a name="references"></a>
 
+1. For help with my basic game foundation using Java: [Simon Says Java](https://www.youtube.com/watch?v=n_ec3eowFLQ)
+2. For help with some keyframe animation: [CSS Tricks](https://css-tricks.com/almanac/properties/a/animation/), [TypeWriter Animation](https://codepen.io/rusjames/pen/uAFhE), [Star Animation](https://css-tricks.com/parallax-background-css3/)
+3. For general help and information on topics: [StackOverflow](https://stackoverflow.com/)
+
 # Acknowledgements <a name="acknowledge"></a>
+
+1. My tutor Niashant Kumar. He was really informative, friendly and helped inspire me to create this project. I feel like it was a rather ambitious first attempt at Interactive
+Frontend but Nishant really believed in my ideas and content which got me over the line. 
 
 
 

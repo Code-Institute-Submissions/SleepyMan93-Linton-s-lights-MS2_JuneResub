@@ -50,7 +50,7 @@ body {
     position: absolute;
     z-index: 4;
     height: auto;
-    width: 20vw;
+    width: 30vw;
 
     animation: LINTON 5s infinite ease-in;
 }
@@ -96,13 +96,12 @@ span {
 #message {
     position: absolute;
     align-self: center;
-    z-index: 7;
-    font-size: 20px;
+    font-size: 15px;
     height: auto;
     border: 2px solid whitesmoke;
     padding-bottom: 10px;
     background-color: black;
-    width: 50%;
+    max-width: 150%;
 }
 
 .link {
@@ -111,14 +110,12 @@ span {
     height: auto;
     border-top: none;
     background-color: transparent;
-    width: 50%;
-    margin-top: 50%;
-    padding-top: 20px;
+    max-width: 100%;
+    margin-top: 85%;
     padding-bottom: 10px;
 }
 
 #start {
-    margin-right: 100px;
     outline: none;
 }
 
@@ -135,7 +132,7 @@ button:focus {
 }
 
 img {
-    width: 150%;
+    max-width: 150%;
     max-height: 100%;
     display: block; 
     order: 0;
@@ -145,7 +142,6 @@ img {
 
 .button-box1 {
     z-index: 6;
-    width: 20%;
     margin-bottom: 7%;
     display: flex;
     flex-wrap: nowrap;
@@ -158,9 +154,8 @@ img {
 
 .button-box2 {
     z-index: 6;
-    width: 20%;
     height: 10%;
-    margin-top: 6%;
+    margin-top: 40px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -172,8 +167,7 @@ img {
 
 .button-box3 {
     z-index: 6;
-    margin-top: 19%;
-    width: 20%;
+    margin-top: 150px;
     height: 10%;
     display: flex;
     flex-wrap: nowrap;
@@ -185,10 +179,12 @@ img {
 }
 
 #pink {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     border: 5px solid #F7AEF8;
+    margin-right: 50px;
+    margin-bottom: 10px;
     align-self: auto;
     transition: top .04s linear;
     padding: 5px 5px;
@@ -201,8 +197,8 @@ img {
 }
 
 #blue {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     border: 5px solid #00B2CA;
     align-self: auto;
@@ -216,8 +212,8 @@ img {
 }
 
 #white {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     border: 5px solid #E7E6F7;
     align-self: auto;
@@ -231,10 +227,11 @@ img {
 }
 
 #lime {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     border: 4px solid #9EE493;
+    margin-right: 50px;
     align-self: auto;
     padding: 5px 5px;
     cursor: pointer;
@@ -246,8 +243,8 @@ img {
 }
 
 #orange {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     border: 4px solid #F79256;
     align-self: auto;
@@ -371,22 +368,77 @@ h1 {
 
 @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(400px) rotate(-3deg);
+        transform: translateX(0) translateY(50px) rotate(-3deg);
     }
     25% {
-        transform: translateX(0.5px) translateY(407px) rotate(0deg);
+        transform: translateX(0.5px) translateY(57px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(403px) rotate(3deg);
+        transform: translateX(0px) translateY(53px) rotate(3deg);
     }
     75% {
-        transform: translateX(0.5px) translateY(405px) rotate(0deg);
+        transform: translateX(0.5px) translateY(55px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(400px) rotate(-3deg);
+        transform: translateX(0px) translateY(50px) rotate(-3deg);
     }
 }
 
 @keyframes blink{
   to{opacity: .0;}
+}
+
+/* Media Queries */
+
+/* Large Devices (Laptops/Desktop) */
+@media only screen and (min-width: 992px) {
+    #pink {
+        height: 80px;
+        width: 80px;
+        margin-right: 90px;
+    }
+
+    #blue {
+        height: 80px;
+        width: 80px;
+    }
+
+    #white {
+        height: 80px;
+        width: 80px;
+    }
+
+    #lime {
+        height: 80px;
+        width: 80px;
+        margin-right: 90px;
+    }
+
+    #orange {
+        height: 80px;
+        width: 80px;
+    }
+
+    .button-box1 {
+        margin-top: 20px;
+    }
+
+    .button-box2 {
+        margin-top: 50px;
+    }
+
+    .button-box3 {
+        z-index: 6;
+        margin-top: 190px;
+    }
+
+    .link {
+        margin-top: 50%;
+    }
+
+    #message {
+        padding: 0px 5px 10px 5px;
+        margin-bottom: 5px;
+    }
+
 }

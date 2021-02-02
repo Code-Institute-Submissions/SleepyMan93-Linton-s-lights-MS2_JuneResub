@@ -23,7 +23,6 @@ console.log(on)
 function startGame() {
     $("#message").addClass("hide-display");
     $(".template").removeClass("hide-display");
-    $(".linton").removeClass("hide-display");
 
 
     if (start.value = true) {
@@ -67,7 +66,7 @@ function userName() {
 
     var introMessage = `<p class="typewriter">Now we're ready for LIFT OFF ${name}!</p>
     <p class="typewriter2">Push the BIG red button...</p>
-    <p class="typewriter3">Our mission statement awaits!<span>|</span></p>`;
+    <p class="typewriter3">Your mission statement awaits!<span>|</span></p>`;
     $("#introMessage").addClass("speech-box");
     document.getElementById("introMessage").innerHTML = introMessage;
 
@@ -91,7 +90,6 @@ function userName() {
 
 window.onload = function() {
     $(".template").addClass("hide-display");
-    $(".linton").addClass("hide-display");
     var message = window.localStorage.getItem("message");
     document.getElementById("message").innerHTML = message;
 }
