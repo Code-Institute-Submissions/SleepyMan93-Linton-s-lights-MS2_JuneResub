@@ -400,7 +400,7 @@ h1 {
 
 /* Small Screens (mobiles and below)*/
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
 
     #pink {
         height: 35px;
@@ -423,7 +423,7 @@ h1 {
     #lime {
         height: 35px;
         width: 35px;
-        margin-right: 60px;
+        margin-right: 35px;
     }
 
     #orange {
@@ -436,11 +436,19 @@ h1 {
     }
 
     .button-box3 {
-        margin-top: 80px;
+        margin-top: 40px;
+    }
+
+    .button-box1 {
+        margin-bottom: 10%;
+    }
+
+    .button-box2 {
+        margin-top: 10px;
     }
 
     .link {
-        margin-top: 130%;;
+        margin-top: 100%;;
     }
 
     .btn-3d {

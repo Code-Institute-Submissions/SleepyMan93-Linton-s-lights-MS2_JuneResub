@@ -126,7 +126,7 @@ span {
 }
 
 img {
-    max-width: 120%;
+    max-width: 150%;
     max-height: 100%;
     display: block; 
     order: 0;
@@ -302,7 +302,7 @@ a:link {
 
 /* Small Screens (mobiles and below)*/
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
     #introMessage {
         margin-left: 120px;
         margin-top: 180px;
@@ -327,7 +327,7 @@ a:link {
     }
 
     img {
-        max-width: 170%;
+        max-width: 150%;
     }
 
 }
