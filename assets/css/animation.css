@@ -126,7 +126,7 @@ span {
 }
 
 img {
-    max-width: 150%;
+    max-width: 120%;
     max-height: 100%;
     display: block; 
     order: 0;
@@ -326,24 +326,28 @@ a:link {
         font-size: 10px;
     }
 
+    img {
+        max-width: 170%;
+    }
+
 }
 
 
     @keyframes LINTON {
     0% {
-        transform: translateX(0) translateY(80px) rotate(-3deg);
+        transform: translateX(-40px) translateY(80px) rotate(-3deg);
     }
     25% {
-        transform: translateX(0.5px) translateY(87px) rotate(0deg);
+        transform: translateX(-39.5px) translateY(87px) rotate(0deg);
     }
     50% {
-        transform: translateX(0px) translateY(83px) rotate(3deg);
+        transform: translateX(-40px) translateY(83px) rotate(3deg);
     }
     75% {
-        transform: translateX(0.3px) translateY(85px) rotate(0deg);
+        transform: translateX(-39.7px) translateY(85px) rotate(0deg);
     }
     100% {
-        transform: translateX(0px) translateY(80px) rotate(-3deg);
+        transform: translateX(-40px) translateY(80px) rotate(-3deg);
     }
     }
 
@@ -371,8 +375,8 @@ a:link {
     }
 
     #introMessage {
-        margin-left: 300px;
-        margin-top: 15px;
+        margin-left: 230px;
+        margin-top: 20px;       
         height: 13%;
         width: 35%;
     }
@@ -393,10 +397,6 @@ a:link {
 /* Medium Screens (Portrait Tablet and Large Phones */
 
 @media only screen and (min-width: 600px) {
-    #introMessage {
-        margin-left: 200px;
-        margin-top: 200px;
-    }
 
     .typewriter {
         font-size: 20px;

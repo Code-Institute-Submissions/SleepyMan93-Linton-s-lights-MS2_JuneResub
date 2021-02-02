@@ -12,7 +12,7 @@ let hard = false;
 
 const startButton = document.getElementById('start');
 const turnCounter = document.getElementById('turn');
-let song = document.getElementById("winningJingle");
+let winSong = document.getElementById("winningJingle");
 
 console.log(on)
 
@@ -43,6 +43,7 @@ x.addListener(sizing) // Attach listener function on state changes
 function startGame() {
     $("#message").addClass("hide-display");
     $(".template").removeClass("hide-display");
+    $(".linton-img").removeClass("hide-display");
 
 
     if (start.value = true) {
@@ -109,6 +110,7 @@ function userName() {
 
 window.onload = function() {
     $(".template").addClass("hide-display");
+    $(".linton-img").addClass("hide-display");
     var message = window.localStorage.getItem("message");
     document.getElementById("message").innerHTML = message;
 }
@@ -301,8 +303,7 @@ function checkMove() {
 }
 
 function playAudio() {
-console.log('clicked');
-    song.play();
+    winSong.play();
 }
 
 function winGame() {
@@ -311,10 +312,9 @@ function winGame() {
     on = false;
     win = true;
     playAudio();
-    console.log(playAudio);
 }
 
-playAudio();
+
 
 
 
