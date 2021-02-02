@@ -336,6 +336,34 @@ a:link {
     }
 }
 
+@media only screen and (max-width: 450px) {
+    #introMessage {
+        margin-left: 120px;
+        margin-top: 180px;
+        width: 60%;
+    }
+
+
+
+    @keyframes LINTON {
+    0% {
+        transform: translateX(0) translateY(300px) rotate(-3deg);
+    }
+    25% {
+        transform: translateX(0.5px) translateY(157px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(0px) translateY(153px) rotate(3deg);
+    }
+    75% {
+        transform: translateX(0.5px) translateY(155px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0px) translateY(150px) rotate(-3deg);
+    }
+}
+}
+
 
 
 @keyframes LINTON {

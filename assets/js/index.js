@@ -279,6 +279,13 @@ function checkMove() {
     }
 }
 
+function winGame() {
+    flashLight();
+    turnCounter.innerHTML = "Congratulation!! YOU HELPED SAVE THE EARTH! Power has been restored";
+    on = false;
+    win = true;
+}
+
 
 
 
