@@ -351,6 +351,29 @@ a:link {
     }
     }
 
+
+
+/* Medium Screens (Portrait Tablet and Large Phones */
+
+@media only screen and (min-width: 600px) {
+
+    .typewriter {
+        font-size: 20px;
+    }
+
+    .typewriter2 {
+        font-size: 20px;
+    }
+
+    .typewriter3 {
+        font-size: 20px;
+    }
+
+    .btn-3d {
+        font-size: 20px;
+    }
+}
+
 /* Large Devices (Laptops/Desktop) */
 @media only screen and (min-width: 992px) {
     .btn-3d {
@@ -375,8 +398,8 @@ a:link {
     }
 
     #introMessage {
-        margin-left: 230px;
-        margin-top: 20px;       
+        margin-left: 320px;
+        margin-top: 80px;    
         height: 13%;
         width: 35%;
     }
@@ -391,27 +414,6 @@ a:link {
 
     .typewriter3 {
         font-size: 20px
-    }
-}
-
-/* Medium Screens (Portrait Tablet and Large Phones */
-
-@media only screen and (min-width: 600px) {
-
-    .typewriter {
-        font-size: 20px;
-    }
-
-    .typewriter2 {
-        font-size: 20px;
-    }
-
-    .typewriter3 {
-        font-size: 20px;
-    }
-
-    .btn-3d {
-        font-size: 20px;
     }
 }
 
