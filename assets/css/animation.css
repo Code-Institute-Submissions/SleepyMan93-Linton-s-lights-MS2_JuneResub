@@ -372,6 +372,33 @@ a:link {
     .btn-3d {
         font-size: 20px;
     }
+
+    .speech-box {
+        margin-top: 200px;
+    }
+
+    .link {
+        margin-top: 22%;
+    }
+}
+
+@keyframes LINTON {
+0% {
+    transform: translateX(-40px) translateY(280px) rotate(-3deg);
+}
+
+25% {
+    transform: translateX(-39.5px) translateY(287px) rotate(0deg);
+}
+50% {
+    transform: translateX(-40px) translateY(283px) rotate(3deg);
+}
+75% {
+    transform: translateX(-39.7px) translateY(285px) rotate(0deg);
+}
+100% {
+    transform: translateX(-40px) translateY(280px) rotate(-3deg);
+}
 }
 
 /* Large Devices (Laptops/Desktop) */
