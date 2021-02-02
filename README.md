@@ -373,6 +373,15 @@ needs the user input to be 3 letters or more.
 
    - ### Issue Fixed: 
 
+10. Whilst trying to make the site more responisve on mobile, everytime I clicked to input my username it would zoom in and mess with the page styling. After some research and
+help on StackOverflow, I realised the issue was due to my text-size. Anywhere below 16px will auto zoom on mobile to adjust for the small font. I cam across a really intuitive 
+jQuery method that increases the input box size onclick to assume the size of 16px and then reduced back again once form submitted. Attached an extra if method to make sure this 
+styling technique only occurs on mobile screen sizes:
+
+   - ### Issue Fixed: 
+   
+   ![Input Field Zoom Fix](assets/images/inputFieldZoomFix.png)
+
 # Technologies Used <a name="languages"></a>
 
 1. [jQuery](https://jquery.com/)

@@ -15,6 +15,25 @@ const turnCounter = document.getElementById('turn');
 
 console.log(on)
 
+/* Viewport User Input Fix: https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone 
+I added in an extra CSS style so that the input field doesn't grow with a border*/
+
+function sizing(x) {
+    if (x.matches) {
+        $('input[type=text]').on('focus', function(){
+        // replace CSS font-size with 16px to disable auto zoom on iOS
+        $(this).data('fontSize', $(this).css('font-size')).css('font-size', '16px').addClass("remove-outline");
+        }).on('blur', function(){
+        // put back the CSS font-size
+        $(this).css('font-size', $(this).data('fontSize'));
+    });
+    }
+}
+
+var x = window.matchMedia("(max-width: 550px)")
+sizing(x) // Call listener function at run time
+x.addListener(sizing) // Attach listener function on state changes
+
 /* Theme Music */
 
 
