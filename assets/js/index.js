@@ -82,7 +82,7 @@ function userName() {
     push the same color. If you get it right, the mainframe will then flash one more light in the series.</p>
     <p class="text-color">All you have to do is REMEMBER the pattern and repush the lights in order...
     Reckon you could do that?... That's right! I KNOW YOU CAN.</p>
-    <p class="text-color">Gods speed ${name}!!. If you need me, just click on me to remind yourself of the mission...<span>|</span> </p>`;
+    <p class="text-color">Gods speed ${name}!!. If you need me, just click on "Restart Game" to remind yourself of the mission...<span>|</span> </p>`;
     window.localStorage.setItem("message", message);
 
     console.log(message);
