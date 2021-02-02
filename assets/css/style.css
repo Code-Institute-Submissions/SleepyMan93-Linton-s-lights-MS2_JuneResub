@@ -42,8 +42,9 @@ body {
     position: absolute;
     width: 100%;
     height: auto;
+    overflow-wrap: break-word;
     align-self: flex-start;
-    color: whitesmoke;
+    color: lime;
 }
 
 .linton {
@@ -474,7 +475,7 @@ h1 {
     }
 
     .button-box3 {
-        margin-top: 130px;
+        margin-top: 70px;
     }
 
     @keyframes LINTON {

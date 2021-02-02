@@ -54,7 +54,6 @@ function endGame() {
 
 function level() {
     easy = false;
-    medium = false;
     hard = false;
 }
 
@@ -94,7 +93,7 @@ window.onload = function() {
     document.getElementById("message").innerHTML = message;
 }
 
-
+/* Game reset */
 
 let playerColor = [];
 
@@ -114,6 +113,8 @@ function initialiseGame() {
 
     intervalId = setInterval(gameFlash, 800); /* setInterval timing method will forvever call the function (gameFlash) at 800ms untill clearInterval is called inside the function */
 }
+
+/* Light Flash Methods */
 
 function gameFlash() {
     on = false;
@@ -182,7 +183,7 @@ const limeLight = document.getElementById('lime');
 const orangeLight = document.getElementById('orange');
 
 
-pinkLight.addEventListener('click', (event) => {
+pinkLight.addEventListener('click', () => {
     if (on);
     playerColor.push(1);
     checkMove();
@@ -194,48 +195,48 @@ pinkLight.addEventListener('click', (event) => {
     };
 })
 
-blueLight.addEventListener('click', (event) => {
+blueLight.addEventListener('click', () => {
     if (on);
     playerColor.push(2);
     checkMove();
     two();
-    if (!win) {   /* Having ! before the variable means not. In this case.. "if not win, clearColor after 400 ms" */
+    if (!win) {   
         setTimeout(() => {
             clearColor();
         }, 400)
     };
 })
 
-whiteLight.addEventListener('click', (event) => {
+whiteLight.addEventListener('click', () => {
     if (on);
     playerColor.push(3);
     checkMove();
     three();
-    if (!win) {   /* Having ! before the variable means not. In this case.. "if not win, clearColor after 400 ms" */
+    if (!win) {   
         setTimeout(() => {
             clearColor();
         }, 400)
     };
 })
 
-limeLight.addEventListener('click', (event) => {
+limeLight.addEventListener('click', () => {
     if (on);
     playerColor.push(4);
     checkMove();
     four();
-    if (!win) {   /* Having ! before the variable means not. In this case.. "if not win, clearColor after 400 ms" */
+    if (!win) {   
         setTimeout(() => {
             clearColor();
         }, 400)
     };
 })
 
-orangeLight.addEventListener('click', (event) => {
+orangeLight.addEventListener('click', () => {
     if (on);
     playerColor.push(5);
     checkMove();
     five();
-    if (!win) {   /* Having ! before the variable means not. In this case.. "if not win, clearColor after 400 ms" */
+    if (!win) {   
         setTimeout(() => {
             clearColor();
         }, 400)
@@ -267,7 +268,7 @@ function checkMove() {
                 }, 800);
     } 
 
-    if (playerColor.length == 20 && good == true) {
+    if (playerColor.length == 5 && good == true) {
         winGame();
     }
 
@@ -281,9 +282,11 @@ function checkMove() {
 
 function winGame() {
     flashLight();
-    turnCounter.innerHTML = "Congratulation!! YOU HELPED SAVE THE EARTH! Power has been restored";
+    turnCounter.innerHTML = `CONGRATULATIONS! Power has been restored to my ship. Saving the world today was down to YOU!`;
     on = false;
     win = true;
+    let winning = document.getElementById("winningJingle");
+    audio.play();
 }
 
 

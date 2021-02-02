@@ -247,6 +247,16 @@ mainframe. By applying some simple jQuery I could attach display classes to the 
 
    ![Box Styling Final](assets/images/boxStylingFinal.png)
 
+- TEST: To make sure my winGame Function works and congratualtes the user when finishing the last level, I reduced the amount of rounds needed to win. 
+tried too many times to do all 20 rounds...
+
+   ![WinGame Function](assets/images/winGameFunction.png)
+
+   - After reaching round 5, I confirmed my winGame Function works and displays a message. Just need to style and personalise the mesaage in keeping with
+   the game:
+
+   ![WinGame Message](assets/images/winningMessage.png)
+
 ## HTML and CSS checks
 
 - HTML: My first HTML check returned only one error. Project completion 90%: 
@@ -376,7 +386,7 @@ needs the user input to be 3 letters or more.
 you need to go back and save here for it to react online. once in the repository, move to settings. Under the settings tab scroll down to Github Pages and choose
 branch: Master, Root directory and hit save. This works as I've pushed every commit to the master branch.
 
-   ![Github Public Deployment]()
+   ![Github Public Deployment](assets/images/pagesDeployment.png)
 
 # References <a name="references"></a>
 
