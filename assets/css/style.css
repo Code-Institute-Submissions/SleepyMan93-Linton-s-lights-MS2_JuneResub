@@ -472,9 +472,13 @@ h1 {
         margin-right: 60px;
     }
 
-       #orange {
+    #orange {
         height: 35px;
         width: 35px;
+    }
+
+    .text-color {
+        font-size: 10px;
     }
 
     .button-box3 {
