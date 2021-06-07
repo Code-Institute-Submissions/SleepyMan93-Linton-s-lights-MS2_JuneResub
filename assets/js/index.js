@@ -41,16 +41,13 @@ x.addListener(sizing) // Attach listener function on state changes
 /* Username Store and Messages */
 
 function userName() {
-    var x;
-    x = document.getElementById("submitButton").value;
-    if (x == "") {
+
+    var name = document.getElementById("nameField").value;
+    
+    if (name == "") {
         alert("Enter Username To Continue");
         return false;
     };
-
-    
-    var name = document.getElementById("nameField").value;
-    
 
     var introMessage = `<p class="typewriter">Now we're ready for LIFT OFF ${name}!</p>
     <p class="typewriter2">Push the BIG red button...</p>
