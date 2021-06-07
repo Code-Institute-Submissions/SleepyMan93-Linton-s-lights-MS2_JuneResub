@@ -41,6 +41,14 @@ x.addListener(sizing) // Attach listener function on state changes
 /* Username Store and Messages */
 
 function userName() {
+    var x;
+    x = document.getElementById("submitButton").value;
+    if (x == "") {
+        alert("Enter Username To Continue");
+        return false;
+    };
+
+    
     var name = document.getElementById("nameField").value;
     
 
@@ -71,16 +79,6 @@ window.onload = function() {
     var message = window.localStorage.getItem("message");
     document.getElementById("message").innerHTML = message;
 }
-
-function empty() {
-    var x;
-    x = document.getElementById("nameField").value;
-    if (x == "") {
-        alert("Enter Username To Continue");
-        return false;
-    };
-}
-
 
 /* Start Button */
 
