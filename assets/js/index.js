@@ -72,6 +72,15 @@ window.onload = function() {
     document.getElementById("message").innerHTML = message;
 }
 
+function empty() {
+    var x;
+    x = document.getElementById("nameField").value;
+    if (x == "") {
+        alert("Enter Username To Continue");
+        return false;
+    };
+}
+
 
 /* Start Button */
 
