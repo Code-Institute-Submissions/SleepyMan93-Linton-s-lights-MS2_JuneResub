@@ -39,6 +39,7 @@
    - How to create local version
 6. [References](#references)
 7. [Acknowledgements](#acknowledge)
+8. [Resubmission Notes](#fixes)
 
 
 # UX Development <a name="uxdev"></a>
@@ -435,7 +436,20 @@ Frontend but Nishant really believed in my ideas and content which got me over t
 code that I didn't have time to go back and revert to. Would love some more time to clean this up but hope my project cycle 
 is enough for now.
 
+# Resubmission Notes <a name="fixes"></a>
 
+1. My first error to correct was a user related problem. The user was able to continue into the game without filling a name. The sprite 'Linton' produces intro messages
+with the gap for the username blank. 
+   - FIX: This took a few tries and some safety net procedures. My first thought was to simply put 'required' in the input with the ID 'nameField'. However, this didn't really 
+   seem to make any differnce in the way of producing an error output. I decided to dig a bit deeper and produce an error message if the user tries to enter nothing, this will 
+   help with user experience and understanding why the game won't start.
+
+   To do this I made a new rule inside the **username** function. As the variable **name** had already been assigned the value "document.getElementById("nameField").value", 
+   it was set up to recieve the input value of the previously mentioned ID 'nameField'. Therefore this new rule produces a unique error message pop up when the value of "nameField" is blank..
+   ![Fixed Empty Namefield Error](assets/images/emptyNameRule.png)
+
+   Now the rule works and produces an error message, I simply attahced the **username** function to the submit button using onClick. This means when the button is clicked to 
+   start the game, it will check to see if the user input value is blank and if it is, the game will produce an error message explaining why it hasn't started.
 
 
 
