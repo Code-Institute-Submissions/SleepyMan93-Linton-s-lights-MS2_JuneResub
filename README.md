@@ -451,5 +451,10 @@ with the gap for the username blank.
    Now the rule works and produces an error message, I simply attahced the **username** function to the submit button using onClick. This means when the button is clicked to 
    start the game, it will check to see if the user input value is blank and if it is, the game will produce an error message explaining why it hasn't started.
 
+2. The second problem was solving the console log errors. When the game loads, these two errors are produced...
+   ![Console Log Errors](assets/images/consoleLogErrors.png)
+
+   - FIX: A slightly harder issue to solve, which took a few code adjustments. Finding the root cause of the errors eventually helped me solve both. The first error on line 210, after some research, I realised was due to the the index.html file trying to load some JS from the index.js file. The **addEventListener** in question was regarding the lightbulb colours and flashes. As the index.js file was linked to the index.html file, there was no ID of pink or any other colour to listen for, hence the error of **null**. The other error regarding the **innerHTML** property on line 77 was slightly more challenging to solve. I tried removing the **window.onload** as I realised this was forcing the **message** to try fill the intended div even though it wasn't on that page. This meant the error disappeared but the message did not appear before the game. After several edits to the code, I again realised the div this function was filling with the **message** HTML was on the game.html file. Thus, to solve both errors, I simply seperated the game JS logic into a seperate JS file and this solved both my issues. 
+
 
 
