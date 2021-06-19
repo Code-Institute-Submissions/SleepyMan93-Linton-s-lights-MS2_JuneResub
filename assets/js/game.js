@@ -39,7 +39,6 @@ function startGame() {
         turnCounter.innerHTML = "";
         clearInterval(intervalId);
     }
-    console.log(on)
 }
 
 /* Reset Button */
@@ -79,7 +78,6 @@ function initialiseGame() {
     turnCounter.innerHTML = 1;
     computerTurn = true;
     good = true
-    console.log(order)
 
     intervalId = setInterval(gameFlash, 800); /* setInterval timing method will forvever call the function (gameFlash) at 800ms untill clearInterval is called inside the function */
 }
@@ -107,7 +105,6 @@ function gameFlash() {
         flash++;
     }, 200);
     }
-    console.log(on)
 }
 
 function one() {
@@ -246,7 +243,6 @@ function checkMove() {
         turn++;
         repeatRound();
         turnCounter.innerHTML = turn;
-        console.log("Good Move!")
     }
 }
 
